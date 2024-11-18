@@ -16,3 +16,11 @@ A dedicated repository to showcase my learning path, achievements, and aspiratio
  - Data Warehousing
  - Data Management
  - [Coursera Certificate](https://github.com/KonstantinData/list-of-courses-certifications/blob/main/Certificates/Coursera%20Data%20Ecosystem%201FBABXJDT2JH.pdf)
+
+### Manage Versions with Git
+ - Introduction user interfaces
+ - Git Overview and setting and committing first repository
+ - Adding files and versions, revisiting older versions without changing the current version
+ - Going back in time with and without rewriting history
+ - Using integrated Git in Atom and Visual Studio  
+ - [Coursera Certificate](https://github.com/KonstantinData/list-of-courses-certifications/blob/main/Certificates/Coursera%20Manage%20Git%20Versions%20D9T3WRHTLBHR.pdf)
