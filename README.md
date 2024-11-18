@@ -15,4 +15,4 @@ A dedicated repository to showcase my learning path, achievements, and aspiratio
  - Data Sources
  - Data Warehousing
  - Data Management
-📄 [Coursera Certificate](https://github.com/KonstantinData/list-of-courses-certifications/blob/main/Certificates/Coursera%20Data%20Ecosystem%201FBABXJDT2JH.pdf)
+ - [Coursera Certificate](https://github.com/KonstantinData/list-of-courses-certifications/blob/main/Certificates/Coursera%20Data%20Ecosystem%201FBABXJDT2JH.pdf)
