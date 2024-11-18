@@ -7,4 +7,11 @@ A dedicated repository to showcase my learning path, achievements, and aspiratio
 ### Languages 🌍  
 - **German:** Native speaker with excellent proficiency in both professional and informal settings.  
 - **English:** Advanced, confident in business communication and technical discussions.  
-- **Greek:** Intermediate level, sufficient for everyday conversations and basic interactions.  
+- **Greek:** Intermediate level, sufficient for everyday conversations and basic interactions.
+
+## Coursera Courses
+
+### Data Ecosystem
+ - Data Sources
+ - Data Warehousing
+ - Data Management
