@@ -1,6 +1,4 @@
 ## My Academic Journey ✅  
-*📅 As of November 18, 2024, this page is currently under construction. Stay tuned for updates!* 🚧  
-
 
 A dedicated repository to showcase my learning path, achievements, and aspirations in the fields of **Data Analytics** and **Data Engineering**. 🚀  
 
@@ -40,3 +38,31 @@ A dedicated repository to showcase my learning path, achievements, and aspiratio
   - Preparing "What-if" scenarios using dynamic quadrant charts.  
 - **Troubleshooting Tableau Calculations**  
   - Identifying and resolving common calculation errors.
+ 
+### Tableau Advanced Analytics and Visualizations
+- **Detail-Rich Map Visualizations**  
+  - Creating and customizing maps for advanced geographic insights.  
+- **Configuring Date and Time Fields**  
+  - Analyzing trends over time with properly configured date and time fields.  
+- **Extending Data with Calculated Fields**  
+  - Using Calculated Fields to enrich datasets and uncover deeper insights.  
+- **Customer Analytics Case Study**  
+  - Applying advanced Tableau skills to a real-world business scenario.  
+- **Hands-On Techniques**  
+  - Creating bins, customizing filters, and applying quick table calculations.  
+- **Power User Techniques**  
+  - Mastering dynamic sets, groups, and slicing and dicing data for advanced analysis.  
+- **Certification Preparation**  
+  - Building foundational knowledge for the Tableau Desktop Specialist certification.
+ 
+### Advanced Reporting with Tableau Statistical Functions  
+- **Exploratory Data Analysis (EDA)**  
+  - Performing univariate and bivariate analyses using Tableau’s drag-and-drop analytics.  
+- **Regression Models**  
+  - Creating and interpreting regression models to uncover hidden trends.  
+- **Machine Learning Techniques**  
+  - Applying clustering and forecasting for predictive insights.  
+- **Real-World Datasets**  
+  - Working with practical datasets to apply statistical methods effectively.  
+- **Deep Data Insights**  
+  - Leveraging Tableau’s built-in statistical tools to enhance reporting and analytics.
