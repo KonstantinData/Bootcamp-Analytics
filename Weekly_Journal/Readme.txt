@@ -10,6 +10,7 @@ This repository documents my transition from a career in retail and customer eng
 
 Feel free to explore, provide feedback, or connect with me to discuss ideas and opportunities.
 
+[medium ] https://medium.com/@info_98425/the-bridge-between-yesterday-and-tomorrow-5acdb3dd1013
 ---
 
 ## Contents
