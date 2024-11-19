@@ -24,3 +24,19 @@ A dedicated repository to showcase my learning path, achievements, and aspiratio
  - Going back in time with and without rewriting history
  - Using integrated Git in Atom and Visual Studio  
  - [Coursera Certificate](https://github.com/KonstantinData/list-of-courses-certifications/blob/main/Certificates/Coursera%20Manage%20Git%20Versions%20D9T3WRHTLBHR.pdf)
+
+## Datacamp
+
+### Tableau Calculations for Advanced Visualizations
+- **Introduction to Tableau Calculations**  
+  - Understanding the basics of calculated fields and functions.  
+- **Using Functions for Tableau Calculations**  
+  - Applying logical, string, and numerical functions to solve real-world problems.  
+- **Analyzing Real-Life Datasets**  
+  - Exploring Fitbit usage data and retail clothing data for meaningful insights.  
+- **Cohort and Survival Analysis**  
+  - Creating advanced analyses to answer business-related questions.  
+- **Dynamic Visualizations with Scenarios**  
+  - Preparing "What-if" scenarios using dynamic quadrant charts.  
+- **Troubleshooting Tableau Calculations**  
+  - Identifying and resolving common calculation errors.
