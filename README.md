@@ -66,3 +66,19 @@ A dedicated repository to showcase my learning path, achievements, and aspiratio
   - Working with practical datasets to apply statistical methods effectively.  
 - **Deep Data Insights**  
   - Leveraging Tableau’s built-in statistical tools to enhance reporting and analytics.
+ 
+## Youtube
+
+### Data with Baraa: Enhancing Your Learning Journey  
+- **Additional Tableau Training**  
+  - Practical tutorials for building advanced dashboards and interactive visualizations.  
+- **SQL Mastery**  
+  - Step-by-step guides on joins, window functions, and optimizing queries.  
+- **Real-World Applications**  
+  - Focused examples for applying concepts to real-world datasets.  
+- **Accessible Learning**  
+  - Clear, concise explanations for both beginners and advanced learners.  
+- **Support & Community**  
+  - Engage with an active community to exchange ideas and grow together.
+- https://www.datawithbaraa.com
+- https://www.youtube.com/@DataWithBaraa
