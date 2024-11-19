@@ -38,6 +38,7 @@ A dedicated repository to showcase my learning path, achievements, and aspiratio
   - Preparing "What-if" scenarios using dynamic quadrant charts.  
 - **Troubleshooting Tableau Calculations**  
   - Identifying and resolving common calculation errors.
+- [Coursera Certificate](https://github.com/KonstantinData/list-of-courses-certifications/blob/main/Certificates/Datacamp%20Calculations%20in%20Tableau.pdf)
  
 ### Tableau Advanced Analytics and Visualizations
 - **Detail-Rich Map Visualizations**  
@@ -54,6 +55,7 @@ A dedicated repository to showcase my learning path, achievements, and aspiratio
   - Mastering dynamic sets, groups, and slicing and dicing data for advanced analysis.  
 - **Certification Preparation**  
   - Building foundational knowledge for the Tableau Desktop Specialist certification.
+- [Coursera Certificate](https://github.com/KonstantinData/list-of-courses-certifications/blob/main/Certificates/Datacamp%20Analyzing%20Data%20in%20Tableau.pdf)
  
 ### Advanced Reporting with Tableau Statistical Functions  
 - **Exploratory Data Analysis (EDA)**  
@@ -66,6 +68,7 @@ A dedicated repository to showcase my learning path, achievements, and aspiratio
   - Working with practical datasets to apply statistical methods effectively.  
 - **Deep Data Insights**  
   - Leveraging Tableau’s built-in statistical tools to enhance reporting and analytics.
+- [Coursera Certificate](https://github.com/KonstantinData/list-of-courses-certifications/blob/main/Certificates/Datacamp%20Statistical%20Techniques%20in%20Tableau.pdf)
  
 ## Youtube
 
