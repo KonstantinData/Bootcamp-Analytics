@@ -1,0 +1,1 @@
+Amigoscode is a YouTube channel dedicated to software development education, offering a wide range of tutorials and courses. The channel covers various programming languages and frameworks, including Java, Python, Spring Boot, and microservices. As of November 2024, Amigoscode has over 1 million subscribers and more than 440 videos
