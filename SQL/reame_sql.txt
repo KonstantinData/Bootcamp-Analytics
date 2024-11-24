@@ -1,1 +1,0 @@
-This Folder will display information of courses, sql-code, etc.
