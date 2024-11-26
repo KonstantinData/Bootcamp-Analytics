@@ -55,4 +55,4 @@ Contributions to expand the dataset or improve visualizations are welcome. Pleas
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). All data and visualizations are for educational and non-commercial use only.
+This project is licensed under the [MIT License]. All data and visualizations are for educational and non-commercial use only.
