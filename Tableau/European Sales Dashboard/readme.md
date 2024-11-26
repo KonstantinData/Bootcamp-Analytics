@@ -56,4 +56,4 @@ Contributions to enhance the analysis, add new datasets, or improve visualizatio
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). The data and visualizations are intended for educational and non-commercial use only.
+This project is licensed under the [MIT License]. The data and visualizations are intended for educational and non-commercial use only.
