@@ -1,0 +1,3 @@
+To connect, paste the following URL using the “Import from URL” option mentioned in the instructions linked above:
+
+postgresql://Student1:3qHbUNF6KCDP@ep-noisy-flower-846766.us-east-2.aws.neon.tech/BA?sslmode=require
