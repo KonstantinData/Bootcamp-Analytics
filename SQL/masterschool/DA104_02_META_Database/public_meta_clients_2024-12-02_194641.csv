@@ -1,0 +1,301 @@
+client_id,sales_team,industry,sector,region,country,annual_revenue,last_updated_date,marketing_spend_perc
+Client_11,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,133,2023-05-24,0.07
+Client_12,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,1176,2023-05-15,0.02
+Client_13,LCS_UK_FINANCE,Financial Services,Banking,EMEA,,1260,2023-03-10,0.04
+Client_14,MENA_ECOM,Retail & Consumer Goods,Consumer Goods,EMEA,United Arab Emirates,7628,2023-05-11,0.01
+Client_15,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,68,2023-06-29,0.14
+Client_16,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,E.M.E.A,Spain,452,2023-06-12,0.04
+Client_107,LCS_FR_LUXURY,Retail,Retail,EMEA,,3566,2023-05-30,0.03
+Client_108,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,166,2023-01-31,0.1
+Client_109,LCS_UK_FINANCE,financial services,banking,E.M.E.A,United Kingdom,949,2023-02-09,0.03
+Client_1010,MENA_ECOM,retail,Consumer Goods,EMEA,United Arab Emirates,161,2023-02-28,0.08
+Client_1011,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,E.M.E.A,Germany,5803,2023-04-24,0.02
+Client_1012,SMB_ES_RETAIL,Retail & Consumer Goods,"Retail   ",E.M.E.A,,297,2023-06-26,0.04
+Client_1113,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,E.M.E.A,France,2733,2023-04-04,0.06
+Client_1114,LCS_IT_FASHION,Retail & Consumer Goods,retail,EMEA,Italy,193,2023-04-20,0.13
+Client_1115,LCS_UK_FINANCE,Financial Services,banking,EMEA,United Kingdom,335,2023-03-31,0.04
+Client_1116,MENA_ECOM,Retail & Consumer Goods,Consumer Goods,EMEA,United Arab Emirates,92,2023-03-18,0.14
+Client_1117,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,389,2023-02-15,0.06
+Client_1118,SMB_ES_RETAIL,Retail & Consumer Goods,"Retail   ",EMEA,Spain,1248,2023-04-16,0.03
+Client_1219,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,,353,2023-03-05,0.09
+Client_1220,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,106,2023-04-15,0.14
+Client_1221,LCS_UK_FINANCE,financial services,banking,EMEA,United Kingdom,214,2023-04-01,0.08
+Client_1222,MENA_ECOM,"Retail  ",Consumer Goods,EMEA,United Arab Emirates,374,2023-03-31,0.08
+Client_1223,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,231,2023-05-30,0.08
+Client_1224,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,142,2023-04-02,0.07
+Client_1325,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,147,2023-05-04,0.1
+Client_1326,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,,1020,2023-03-04,0.07
+Client_1327,LCS_UK_FINANCE,Financial Services,Banking,EMEA,United Kingdom,9730,2023-04-22,0.01
+Client_1328,MENA_ECOM,"Retail  ",Consumer Goods,EMEA,United Arab Emirates,444,2023-04-09,0.03
+Client_1329,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,432,2023-04-22,0.03
+Client_1330,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,324,2023-05-17,0.12
+Client_1431,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,132,2023-03-20,0.11
+Client_1432,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,266,2023-02-03,0.1
+Client_1433,LCS_UK_FINANCE,Financial Services,banking,EMEA,United Kingdom,604,2023-05-13,0.03
+Client_1434,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,United Arab Emirates,989,2023-03-01,0.1
+Client_1435,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,160,2023-05-19,0.05
+Client_1436,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,239,2023-03-14,0.06
+Client_1537,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,541,2023-03-15,0.06
+Client_1538,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,209,2023-03-02,0.07
+Client_1539,LCS_UK_FINANCE,Finance,Banking,EMEA,United Kingdom,1384,2023-04-29,0.01
+Client_1540,MENA_ECOM,"Retail  ",Retail,EMEA,United Arab Emirates,151,2023-03-17,0.08
+Client_1541,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,,304,2023-06-05,0.05
+Client_1542,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,191,2023-03-27,0.15
+Client_1643,LCS_FR_LUXURY,Retail,Retail,EMEA,France,81,2023-06-13,0.14
+Client_1644,LCS_IT_FASHION,Retail,retail,EMEA,Italy,1236,2023-04-01,0.05
+Client_1645,LCS_UK_FINANCE,Financial Services,Banking,EMEA,United Kingdom,338,2023-04-24,0.1
+Client_1646,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,United Arab Emirates,308,2023-04-30,0.07
+Client_1647,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,304,2023-02-12,0.07
+Client_1648,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,5720,2023-05-15,0.01
+Client_1749,LCS_FR_LUXURY,retail,Retail,EMEA,France,170,2023-04-10,0.12
+Client_1750,LCS_IT_FASHION,Retail & Consumer Goods,retail,EMEA,Italy,110,2023-06-29,0.12
+Client_1751,LCS_UK_FINANCE,Financial Services,Banking,EMEA,United Kingdom,136,2023-04-30,0.1
+Client_1752,MENA_ECOM,"Retail  ",retail,EMEA,United Arab Emirates,985,2023-02-09,0.11
+Client_1753,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,334,2023-04-05,0.08
+Client_1754,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,4059,2023-04-17,0.01
+Client_1855,LCS_FR_LUXURY,RCG,Retail,EMEA,France,326,2023-04-15,0.05
+Client_1856,LCS_IT_FASHION,Retail,retail,EMEA,Italy,227,2023-06-03,0.06
+Client_1857,LCS_UK_FINANCE,Finance,Banking,EMEA,United Kingdom,1001,2023-02-09,0.01
+Client_1858,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,United Arab Emirates,2599,2023-06-29,0.02
+Client_1859,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,777,2023-03-03,0.04
+Client_1860,SMB_ES_RETAIL,Retail & Consumer Goods,Retail,EMEA,Spain,674,2023-03-08,0.06
+Client_1961,LCS_FR_LUXURY,RCG,Retail,E.M.E.A,,322,2023-04-28,0.1
+Client_1962,LCS_IT_FASHION,Retail,retail,EMEA,,264,2023-06-20,0.07
+Client_1963,LCS_UK_FINANCE,Financial Services,Banking,EMEA,United Kingdom,136,2023-04-21,0.07
+Client_1964,MENA_ECOM,"Retail  ",retail,EMEA,United Arab Emirates,479,2023-03-02,0.13
+Client_1965,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,E.M.E.A,Germany,429,2023-03-29,0.02
+Client_1966,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,224,2023-03-06,0.05
+Client_267,LCS_FR_LUXURY,RCG,Retail,EMEA,France,1232,2023-01-31,0.04
+Client_268,LCS_IT_FASHION,Retail & Consumer Goods,retail,E.M.E.A,Italy,289,2023-03-16,0.08
+Client_269,LCS_UK_FINANCE,Financial Services,Banking,EMEA,United Kingdom,282,2023-06-03,0.09
+Client_270,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,United Arab Emirates,735,2023-06-11,0.03
+Client_271,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,,1621,2023-06-08,0.01
+Client_272,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,86,2023-02-26,0.12
+Client_2073,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,499,2023-04-14,0.03
+Client_2074,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,172,2023-05-22,0.05
+Client_2075,LCS_UK_FINANCE,Finance,Capital Markets,EMEA,United Kingdom,150,2023-05-17,0.12
+Client_2076,MENA_ECOM,"Retail  ",retail,EMEA,United Arab Emirates,272,2023-06-02,0.07
+Client_2077,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,508,2023-02-15,0.05
+Client_2078,SMB_ES_RETAIL,Retail & Consumer Goods,Retail,EMEA,Spain,398,2023-04-26,0.14
+Client_2179,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,566,2023-02-28,0.03
+Client_2180,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,411,2023-05-17,0.05
+Client_2181,LCS_UK_FINANCE,Financial Services,Capital Markets,EMEA,United Kingdom,1221,2023-04-30,0.04
+Client_2182,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,Morocco,80,2023-05-16,0.14
+Client_2183,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,1413,2023-05-10,0.01
+Client_2184,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,2562,2023-04-03,0.05
+Client_2285,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,137,2023-05-16,0.13
+Client_2286,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,526,2023-05-26,0.02
+Client_2287,LCS_UK_FINANCE,Financial Services,Capital Markets,EMEA,United Kingdom,78,2023-04-19,0.12
+Client_2288,MENA_ECOM,"Retail  ",retail,EMEA,Morocco,188,2023-02-23,0.09
+Client_2289,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,187,2023-05-07,0.12
+Client_2290,SMB_ES_RETAIL,Retail & Consumer Goods,Retail,EMEA,Spain,422,2023-06-10,0.03
+Client_2391,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,3082,2023-03-10,0.01
+Client_2392,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,874,2023-06-25,0.15
+Client_2393,LCS_UK_FINANCE,Financial Services,Capital Markets,EMEA,United Kingdom,308,2023-02-03,0.08
+Client_2394,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,Morocco,356,2023-04-10,0.03
+Client_2395,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,101,2023-03-21,0.12
+Client_2396,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,248,2023-02-07,0.15
+Client_2497,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,268,2023-05-27,0.1
+Client_2498,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,4873,2023-05-17,0.02
+Client_2499,LCS_UK_FINANCE,Finance,Capital Markets,EMEA,United Kingdom,483,2023-05-05,0.11
+Client_24100,MENA_ECOM,"Retail  ",Retail,EMEA,Morocco,10473,2023-06-23,0.01
+Client_24101,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,566,2023-06-08,0.03
+Client_24102,SMB_ES_RETAIL,Retail & Consumer Goods,Retail,EMEA,Spain,64,2023-03-26,0.15
+Client_25103,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,6858,2023-03-27,0.01
+Client_25104,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,492,2023-04-03,0.04
+Client_25105,LCS_UK_FINANCE,Financial Services,Capital Markets,EMEA,United Kingdom,623,2023-05-03,0.12
+Client_25106,MENA_ECOM,Retail & Consumer Goods,retail,EMEA,Morocco,951,2023-04-24,0.02
+Client_25107,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,137,2023-05-08,0.15
+Client_25108,SMB_ES_RETAIL,Retail & Consumer Goods,"Retail   ",EMEA,Spain,2995,2023-02-04,0.01
+Client_26109,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,3313,2023-02-16,0.02
+Client_26110,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,363,2023-03-29,0.09
+Client_26111,LCS_UK_FINANCE,Financial Services,Capital Markets,EMEA,United Kingdom,249,2023-03-07,0.06
+Client_26112,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,Morocco,68,2023-06-16,0.14
+Client_26113,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,E.M.E.A,Germany,866,2023-05-11,0.01
+Client_26114,SMB_ES_RETAIL,Retail & Consumer Goods,"Retail   ",EMEA,Spain,190,2023-06-18,0.07
+Client_27115,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,88,2023-04-28,0.14
+Client_27116,LCS_IT_FASHION,Retail & Consumer Goods,Retail,E.M.E.A,Italy,322,2023-04-08,0.08
+Client_27117,LCS_UK_FINANCE,Financial Services,Capital Markets,EMEA,United Kingdom,2131,2023-06-27,0.02
+Client_27118,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,Morocco,359,2023-06-04,0.03
+Client_27119,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,E.M.E.A,,157,2023-03-24,0.07
+Client_27120,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,180,2023-04-30,0.07
+Client_28121,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,240,2023-03-16,0.1
+Client_28122,LCS_IT_FASHION,Retail & Consumer Goods,Retail,EMEA,Italy,384,2023-03-12,0.12
+Client_28123,LCS_UK_FINANCE,Finance,Capital Markets,EMEA,United Kingdom,238,2023-04-17,0.06
+Client_28124,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,Morocco,192,2023-04-01,0.15
+Client_28125,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,E.M.E.A,Germany,160,2023-06-18,0.1
+Client_28126,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,628,2023-03-24,0.02
+Client_29127,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,,234,2023-04-08,0.06
+Client_29128,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,1535,2023-05-30,0.07
+Client_29129,LCS_UK_FINANCE,Financial Services,Capital Markets,EMEA,United Kingdom,205,2023-04-07,0.13
+Client_29130,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,Morocco,675,2023-05-15,0.03
+Client_29131,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,E.M.E.A,Germany,406,2023-02-22,0.1
+Client_29132,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,136,2023-02-06,0.11
+Client_3133,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,,188,2023-02-01,0.07
+Client_3134,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,125,2023-03-19,0.11
+Client_3135,LCS_UK_FINANCE,Financial Services,Capital Markets,EMEA,United Kingdom,123,2023-02-10,0.1
+Client_3136,MENA_ECOM,Retail & Consumer Goods,Retail,E.M.E.A,Morocco,443,2023-06-13,0.1
+Client_3137,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,159,2023-05-11,0.13
+Client_3138,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,495,2023-03-11,0.02
+Client_30139,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,816,2023-04-03,0.01
+Client_30140,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,E.M.E.A,Italy,442,2023-04-05,0.03
+Client_30141,LCS_UK_FINANCE,Financial Services,Capital Markets,EMEA,,117,2023-02-21,0.09
+Client_30142,MENA_ECOM,Retail & Consumer Goods,"consumers goods ",EMEA,Morocco,591,2023-03-24,0.05
+Client_30143,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,E.M.E.A,Germany,732,2023-06-08,0.12
+Client_30144,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,1440,2023-03-01,0.01
+Client_31145,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,378,2023-02-24,0.03
+Client_31146,LCS_IT_FASHION,Retail & Consumer Goods,consumer goods,EMEA,Italy,1273,2023-05-07,0.12
+Client_31147,LCS_UK_FINANCE,Financial Services,Capital Markets,EMEA,,188,2023-05-03,0.05
+Client_31148,MENA_ECOM,Retail & Consumer Goods,Consumer Goods,EMEA,Morocco,106,2023-04-25,0.14
+Client_31149,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,1337,2023-03-18,0.03
+Client_31150,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,312,2023-06-29,0.06
+Client_32151,LCS_FR_LUXURY,Retail & Consumer Goods,Retail,EMEA,France,2792,2023-04-27,0.02
+Client_32152,LCS_IT_FASHION,Retail & Consumer Goods,consumer goods,EMEA,Italy,12525,2023-03-05,0.01
+Client_32153,LCS_UK_FINANCE,Financial Services,Insurance,EMEA,,284,2023-02-08,0.09
+Client_32154,MENA_ECOM,Retail & Consumer Goods,"consumers goods ",EMEA,Morocco,96,2023-05-15,0.13
+Client_32155,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,115,2023-02-21,0.09
+Client_32156,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,689,2023-02-21,0.04
+Client_33157,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,,279,2023-03-06,0.14
+Client_33158,LCS_IT_FASHION,Retail & Consumer Goods,consumer goods,EMEA,Italy,1295,2023-06-08,0.02
+Client_33159,LCS_UK_FINANCE,Financial Services,Insurance,EMEA,United Kingdom,69,2023-02-13,0.15
+Client_33160,MENA_ECOM,Retail & Consumer Goods,Consumer Goods,EMEA,Israel,383,2023-02-08,0.06
+Client_33161,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,143,2023-03-04,0.13
+Client_33162,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,530,2023-04-25,0.05
+Client_34163,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,99,2023-05-02,0.12
+Client_34164,LCS_IT_FASHION,Consumer Goods,consumer goods,EMEA,Italy,155,2023-02-10,0.07
+Client_34165,LCS_UK_FINANCE,Financial Services,Insurance,EMEA,United Kingdom,240,2023-03-05,0.05
+Client_34166,MENA_ECOM,Retail & Consumer Goods,Consumer Goods,EMEA,Israel,547,2023-03-21,0.05
+Client_34167,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,,263,2023-02-23,0.1
+Client_34168,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,102,2023-04-01,0.1
+Client_35169,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,101,2023-05-18,0.14
+Client_35170,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,235,2023-03-01,0.07
+Client_35171,LCS_UK_FINANCE,Financial Services,Insurance,EMEA,United Kingdom,237,2023-05-04,0.05
+Client_35172,MENA_ECOM,Retail & Consumer Goods,retail,EMEA,Israel,334,2023-02-17,0.05
+Client_35173,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,197,2023-05-20,0.13
+Client_35174,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,922,2023-03-01,0.07
+Client_36175,LCS_FR_LUXURY,Consumer Goods,Consumer Goods,EMEA,France,86,2023-06-18,0.13
+Client_36176,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,490,2023-04-09,0.08
+Client_36177,LCS_UK_FINANCE,Financial Services,INSURANCE,EMEA,,120,2023-04-17,0.1
+Client_36178,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,Israel,112,2023-02-14,0.12
+Client_36179,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,,1524,2023-02-10,0.02
+Client_36180,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,9345,2023-02-03,0.01
+Client_37181,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,170,2023-03-08,0.11
+Client_37182,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,1200,2023-03-06,0.11
+Client_37183,LCS_UK_FINANCE,Financial Services,Insurance,EMEA,United Kingdom,332,2023-02-28,0.03
+Client_37184,MENA_ECOM,Retail & Consumer Goods,retail,EMEA,Israel,191,2023-06-13,0.08
+Client_37185,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,84,2023-05-23,0.09
+Client_37186,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,491,2023-02-02,0.03
+Client_38187,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,,2014,2023-05-09,0.01
+Client_38188,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,281,2023-04-14,0.04
+Client_38189,LCS_UK_FINANCE,Financial Services,Insurance,EMEA,,1546,2023-05-17,0.02
+Client_38190,MENA_ECOM,Retail & Consumer Goods,"consumers goods ",EMEA,Israel,119,2023-05-26,0.1
+Client_38191,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,369,2023-04-12,0.06
+Client_38192,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,636,2023-06-25,0.03
+Client_39193,LCS_FR_LUXURY,consumer goods,Consumer Goods,EMEA,France,113,2023-05-18,0.11
+Client_39194,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,,285,2023-06-16,0.13
+Client_39195,LCS_UK_FINANCE,financial services,INSURANCE,EMEA,United Kingdom,108,2023-05-16,0.12
+Client_39196,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,Israel,1602,2023-06-14,0.05
+Client_39197,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,,839,2023-02-22,0.02
+Client_39198,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,174,2023-05-22,0.07
+Client_4199,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,206,2023-06-06,0.13
+Client_4200,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,260,2023-01-31,0.15
+Client_4201,LCS_UK_FINANCE,Financial Services,Insurance,EMEA,United Kingdom,136,2023-03-17,0.13
+Client_4202,MENA_ECOM,Retail & Consumer Goods,retail,EMEA,Israel,935,2023-05-10,0.14
+Client_4203,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,5923,2023-02-10,0.01
+Client_4204,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,119,2023-03-30,0.13
+Client_40205,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,119,2023-06-01,0.13
+Client_40206,LCS_IT_FASHION,Retail & Consumer Goods,consumer goods,EMEA,Italy,387,2023-04-26,0.12
+Client_40207,LCS_UK_FINANCE,Financial Services,Insurance,EMEA,United Kingdom,633,2023-02-09,0.05
+Client_40208,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,Israel,403,2023-04-07,0.1
+Client_40209,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,77,2023-05-07,0.13
+Client_40210,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,664,2023-04-15,0.03
+Client_41211,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,3186,2023-04-30,0.01
+Client_41212,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,111,2023-03-11,0.09
+Client_41213,LCS_UK_FINANCE,financial services,INSURANCE,EMEA,United Kingdom,139,2023-05-31,0.11
+Client_41214,MENA_ECOM,"Consumer Goods   ",Retail,EMEA,Israel,168,2023-02-15,0.1
+Client_41215,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,715,2023-06-22,0.02
+Client_41216,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,202,2023-04-07,0.08
+Client_42217,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,152,2023-05-30,0.1
+Client_42218,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,1524,2023-05-02,0.04
+Client_42219,LCS_UK_FINANCE,Financial Services,INSURANCE,EMEA,United Kingdom,421,2023-06-13,0.08
+Client_42220,MENA_ECOM,Retail & Consumer Goods,Consumer Goods,EMEA,Israel,341,2023-06-19,0.04
+Client_42221,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,572,2023-04-13,0.02
+Client_42222,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,112,2023-05-21,0.13
+Client_43223,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,E.M.E.A,France,858,2023-05-26,0.04
+Client_43224,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,834,2023-04-27,0.11
+Client_43225,LCS_UK_FINANCE,financial services,Wealth & Asset Management,EMEA,United Kingdom,266,2023-04-22,0.07
+Client_43226,MENA_ECOM,Retail & Consumer Goods,Consumer Goods,EMEA,Israel,182,2023-06-25,0.08
+Client_43227,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,,575,2023-05-12,0.06
+Client_43228,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,361,2023-04-25,0.05
+Client_44229,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,E.M.E.A,France,2244,2023-04-22,0.02
+Client_44230,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,1018,2023-04-28,0.02
+Client_44231,LCS_UK_FINANCE,Financial Services,Wealth & Asset Management,EMEA,United Kingdom,3112,2023-03-26,0.01
+Client_44232,MENA_ECOM,"Consumer Goods   ","consumers goods ",EMEA,Israel,326,2023-03-24,0.04
+Client_44233,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,8075,2023-03-22,0.01
+Client_44234,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,119,2023-05-12,0.11
+Client_45235,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,E.M.E.A,France,133,2023-04-04,0.13
+Client_45236,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,760,2023-03-22,0.06
+Client_45237,LCS_UK_FINANCE,financial services,Wealth & Asset Management,EMEA,United Kingdom,94,2023-05-08,0.1
+Client_45238,MENA_ECOM,Retail & Consumer Goods,Consumer Goods,EMEA,Israel,99,2023-05-22,0.11
+Client_45239,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,228,2023-03-01,0.09
+Client_45240,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,E.M.E.A,Spain,631,2023-02-07,0.11
+Client_46241,LCS_FR_LUXURY,RCG,Consumer Goods,EMEA,France,717,2023-05-14,0.04
+Client_46242,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,215,2023-03-18,0.09
+Client_46243,LCS_UK_FINANCE,Financial Services,Wealth & Asset Management,EMEA,United Kingdom,234,2023-01-31,0.07
+Client_46244,MENA_ECOM,"Consumer Goods   ",Consumer Goods,EMEA,Israel,168,2023-03-26,0.08
+Client_46245,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,382,2023-05-24,0.1
+Client_46246,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,E.M.E.A,Spain,126,2023-03-22,0.12
+Client_47247,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,298,2023-05-03,0.15
+Client_47248,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,210,2023-05-20,0.11
+Client_47249,LCS_UK_FINANCE,Financial Services,Wealth & Asset Management,EMEA,United Kingdom,498,2023-04-02,0.12
+Client_47250,MENA_ECOM,Retail & Consumer Goods,consumer goods,EMEA,Israel,210,2023-05-08,0.12
+Client_47251,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,562,2023-03-29,0.1
+Client_47252,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,128,2023-05-22,0.13
+Client_48253,LCS_FR_LUXURY,RCG,Consumer Goods,E.M.E.A,France,142,2023-02-14,0.08
+Client_48254,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,1249,2023-06-12,0.03
+Client_48255,LCS_UK_FINANCE,Financial Services,Wealth & Asset Management,EMEA,United Kingdom,199,2023-04-08,0.09
+Client_48256,MENA_ECOM,"Consumer Goods   ",consumer goods,EMEA,Egypt,780,2023-02-18,0.02
+Client_48257,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,314,2023-06-27,0.03
+Client_48258,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,2511,2023-02-12,0.03
+Client_49259,LCS_FR_LUXURY,RCG,Consumer Goods,EMEA,France,943,2023-05-20,0.01
+Client_49260,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,1355,2023-05-12,0.01
+Client_49261,LCS_UK_FINANCE,Financial Services,Wealth & Asset Management,EMEA,United Kingdom,202,2023-04-03,0.09
+Client_49262,MENA_ECOM,"Consumer Goods   ",Consumer Goods,EMEA,Egypt,1859,2023-05-08,0.04
+Client_49263,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,,194,2023-04-29,0.06
+Client_49264,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,453,2023-03-12,0.06
+Client_5265,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,180,2023-06-29,0.1
+Client_5266,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,211,2023-06-09,0.05
+Client_5267,LCS_UK_FINANCE,Financial Services,Wealth & Asset Management,EMEA,United Kingdom,710,2023-04-12,0.04
+Client_5268,MENA_ECOM,Retail & Consumer Goods,consumer goods,EMEA,Egypt,81,2023-04-29,0.11
+Client_5269,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,69,2023-05-29,0.15
+Client_5270,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,914,2023-04-13,0.09
+Client_50271,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,158,2023-06-17,0.11
+Client_50272,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,Italy,1218,2023-02-14,0.07
+Client_50273,LCS_UK_FINANCE,Finance,Wealth & Asset Management,EMEA,United Kingdom,74,2023-04-27,0.14
+Client_50274,MENA_ECOM,Retail & Consumer Goods,Retail,EMEA,Egypt,747,2023-02-25,0.05
+Client_50275,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,162,2023-04-10,0.05
+Client_50276,SMB_ES_RETAIL,Retail & Consumer Goods,RETAIL,EMEA,Spain,1698,2023-06-28,0.01
+Client_6277,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,389,2023-04-29,0.02
+Client_6278,LCS_IT_FASHION,Consumer Goods,Consumer Goods,EMEA,,96,2023-03-25,0.14
+Client_6279,LCS_UK_FINANCE,Financial Services,Wealth & Asset Management,EMEA,United Kingdom,352,2023-02-06,0.05
+Client_6280,MENA_ECOM,"Consumer Goods   ",retail,EMEA,Egypt,335,2023-05-28,0.1
+Client_6281,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,1176,2023-04-04,0.1
+Client_6282,SMB_ES_RETAIL,Retail & Consumer Goods,"Retail   ",EMEA,Spain,141,2023-06-01,0.13
+Client_7283,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,,252,2023-04-27,0.09
+Client_7284,LCS_IT_FASHION,Consumer Goods,Consumer Goods,EMEA,Italy,4043,2023-02-24,0.03
+Client_7285,LCS_UK_FINANCE,Finance,Wealth & Asset Management,EMEA,United Kingdom,3522,2023-04-05,0.03
+Client_7286,MENA_ECOM,"Consumer Goods   ",Retail,EMEA,Egypt,527,2023-05-18,0.05
+Client_7287,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,346,2023-06-15,0.12
+Client_7288,SMB_ES_RETAIL,Retail & Consumer Goods,"Retail   ",EMEA,Spain,436,2023-06-11,0.12
+Client_8289,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,E.M.E.A,France,167,2023-02-14,0.1
+Client_8290,LCS_IT_FASHION,Retail & Consumer Goods,Consumer Goods,EMEA,,569,2023-03-31,0.02
+Client_8291,LCS_UK_FINANCE,Financial Services,Wealth & Asset Management,E.M.E.A,United Kingdom,257,2023-05-22,0.07
+Client_8292,MENA_ECOM,Retail & Consumer Goods,Retail,E.M.E.A,Egypt,216,2023-02-20,0.09
+Client_8293,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,Germany,136,2023-04-07,0.07
+Client_8294,SMB_ES_RETAIL,Retail & Consumer Goods,"Retail   ",EMEA,Spain,243,2023-03-30,0.06
+Client_9295,LCS_FR_LUXURY,Retail & Consumer Goods,Consumer Goods,EMEA,France,77,2023-04-18,0.15
+Client_9296,LCS_IT_FASHION,Consumer Goods,Consumer Goods,EMEA,Italy,1208,2023-04-17,0.01
+Client_9297,LCS_UK_FINANCE,Financial Services,Wealth & Asset Management,EMEA,United Kingdom,283,2023-06-13,0.06
+Client_9298,MENA_ECOM,Retail & Consumer Goods,Consumer Goods,EMEA,Egypt,130,2023-03-07,0.13
+Client_9299,SMB_DACH_AUTO,"Manufacturing, Automotive & Energy",Automotive,EMEA,,158,2023-05-12,0.07
+Client_9300,SMB_ES_RETAIL,Retail & Consumer Goods,"Retail   ",EMEA,Spain,1017,2023-02-15,0.14
