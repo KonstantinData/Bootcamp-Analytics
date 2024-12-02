@@ -1,0 +1,5 @@
+SELECT*
+FROM employee_demographics
+UNION
+SELECT*
+FROM warehouse_employee_demographics
