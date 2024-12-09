@@ -1,0 +1,17 @@
+product_id,cost,category,product_name,retail_price,sku,distribution_center_id
+P001,27.047999916,Sneakers,Nike Air Max 270,99.99,C4CA4,DC001
+P002,52.357999871,Sneakers,Nike Air Force 1,90.0,E4DA3,DC002
+P003,27.917999849,Sneakers,Nike Tanjun,65.0,45C48,DC002
+P004,12.081981,Apparel,Nike Dri-FIT Tee,25.0,C9F0F,DC003
+P005,16.626499919,Apparel,Nike Legend Tee,30.0,C81E7,DC003
+P006,30.665499924,Activewear,Nike Pro Tights,35.0,D3D94,DC004
+P007,20.934999974,Accessories,Nike Sportswear,40.0,8F14E,DC005
+P008,48.866999841,Accessories,Nike Benassi,40.0,6512B,DC005
+P009,8.935999662,Accessories,Nike Gym Sack,30.0,16790,DC006
+P010,57.13199991,Sneakers,Nike Court Royale,115.0,A87FF,DC007
+P011,41.00499986,Apparel,Nike Dri-FIT Shorts,55.0,ECCBC,DC008
+P012,30.5,Sneakers,Vintage Nike Air Max 1,150.0,E5BB9,DC002
+P013,50.55,Sneakers,Vintage Nike Dunk,170.0,99ZC8,DC004
+P014,24.44,Apparel,Vintage Nike Windrunner Jacket,60.0,FFD00,DC006
+P015,33.23,Sneakers,Vintage Nike Waffle Trainer,70.0,AO023,DC005
+P016,66.2,Activewear,Vintage Nike Air Jordan Tracksuit,180.0,GP90L,DC001
