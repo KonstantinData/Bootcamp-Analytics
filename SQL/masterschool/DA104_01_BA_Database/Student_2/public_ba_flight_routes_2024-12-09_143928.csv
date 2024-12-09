@@ -1,0 +1,89 @@
+flight_number,departure_city,arrival_city,distance_flown
+BA1310,Stockholm,London,1153
+BA1371,Gothenburg,London,763
+BA1374,Helsinki,London,1521
+BA1377,London,Helsinki,1521
+BA1378,Helsinki,London,1521
+BA1379,London,Helsinki,1521
+BA1381,Helsinki,London,1521
+BA1382,London,Helsinki,1521
+BA1387,London,Trondheim,1289
+BA1388,Trondheim,London,1289
+BA1390,Linköping,London,957
+BA1394,London,Linköping,957
+BA1395,Linköping,London,957
+BA1397,Bergen,London,888
+BA1398,London,Bergen,888
+BA1399,Bergen,London,888
+BA1401,London,Chicago,6612
+BA1444,Paris,London,398
+BA1510,Edinburgh,London,665
+BA1516,London,Edinburgh,665
+BA1517,Edinburgh,London,665
+BA1526,London,Edinburgh,665
+BA1534,Toulouse,London,997
+BA1538,London,Toulouse,997
+BA1700,London,Aberdeen,703
+BA1702,Aberdeen,London,703
+BA1705,London,Aberdeen,703
+BA1706,Aberdeen,London,703
+BA1707,London,Aberdeen,703
+BA1709,Aberdeen,London,703
+BA1712,London,Aberdeen,703
+BA1716,Nantes,London,732
+BA1722,London,Nantes,732
+BA1723,Nantes,London,732
+BA1729,London,Aarhus,583
+BA1730,Aarhus,London,583
+BA1738,London,Glasgow,717
+BA1739,Glasgow,London,717
+BA1743,London,Glasgow,717
+BA1744,Glasgow,London,717
+BA1748,London,Glasgow,717
+BA1752,London,Humberside,370
+BA1753,Humberside,London,370
+BA1762,London,Humberside,370
+BA1771,London,Valencia,1481
+BA1774,London,Valencia,1481
+BA1775,Valencia,London,1481
+BA1787,Norwich,London,239
+BA1997,Lisbon,London,1846
+BA2000,London,Lisbon,1846
+BA2001,Lisbon,London,1846
+BA2002,London,Lisbon,1846
+BA2004,Madrid,London,1460
+BA2005,London,Madrid,1460
+BA2006,Madrid,London,1460
+BA2007,London,Madrid,1460
+BA2008,Madrid,London,1460
+BA2338,London,Budapest,1166
+BA2341,Basel,London,560
+BA2342,London,Basel,560
+BA2343,Basel,London,560
+BA2349,London,Basel,560
+BA2351,Krakow,London,1073
+BA2354,London,Krakow,1073
+BA2355,Krakow,London,1073
+BA2359,London,Krakow,1073
+BA499,London,Riyadh,4639
+BA504,Dammam,London,4705
+BA505,London,Dubai,5168
+BA542,Dubai,London,5168
+BA543,London,Kuwait City,4355
+BA544,Muscat,Kuwait City,1201
+BA545,London,Tel Aviv,3311
+BA608,Tel Aviv,London,3311
+BA631,Kuala Lumpur,Jakarta,0
+BA721,Kigali,Kampala,339
+BA886,London,Kigali,6486
+BA891,London,Quito,9551
+BA893,Quito,Guayaquil,282
+BA894,London,Panama City,8812
+BA905,Panama City,London,8812
+BA907,Oranjestad,Kralendijk,193
+BA922,Kralendijk,London,0
+BA933,Port of Spain,London,0
+BA935,London,São Paulo,9775
+BA948,São Paulo,London,9775
+BA949,Bangkok,London,9207
+BA955,Manila,Bangkok,2187
