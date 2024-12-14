@@ -149,5 +149,52 @@ GROUP BY clm.manufacturer
 ORDER BY num_flights DESC
 LIMIT 1;                   -- Sortie
 
+/*Question #5: 
+For the flight routes highlighted in question 4 combined, would there have been an aircraft that, on 
+average, would use less fuel on the flight routes? 
 
+The fuel used in liters per flight can be calculated by multiplying the fuel efficiency metric by distance, 
+baggage weight, and number of passengers. 
+
+What aircraft (manufacturer and sub-type) would you recommend to use for each of these flight routes 
+if you use the average fuel consumption as your guiding metric?
+
+If the manufacturer and sub-type are not available for flights, we do not need to show the results of these flights.*/
+
+-- aircraft_which has in avg the least fuel consumption, subtype
+-- ba_aircraft, ba_flight_routes, ba_fuel_efficiency, ba_flights
+-- ac_subtyp, manufacturer, departure_city,  arrival_city, distance_flown, status, total_passengers, baggage_weight, fuel_efficiency  
+-- fuel_efficency_metric x distance, baggage weight, number of passengers 
+-- WHERE departure_city = 'LONDON' AN arrival_city IN (Basel, Trondheim, Glasgow)
+
+-- A comparison of manufacturers reveals that we need to use 'ba_aircraft' as the source 
+-- because 'ba_fuel_efficiency' contains manufacturers that are not aircraft-related.
+SELECT manufacturer
+FROM ba_aircraft
+EXCEPT
+SELECT manufacturer
+FROM ba_fuel_efficiency;
+
+SELECT manufacturer
+FROM ba_fuel_efficiency
+EXCEPT
+SELECT manufacturer
+FROM ba_aircraft;
+
+
+SELECT
+		air.manufacturer,
+    air.ac_subtype,
+    fuel.fuel_efficiency,
+    arrival_city
+FROM ba_flights AS fli
+LEFT JOIN ba_flight_routes AS rout ON fli.flight_number = rout.flight_number
+LEFT JOIN ba_aircraft AS air ON fli.flight_id = air.flight_id
+LEFT JOIN ba_fuel_efficiency AS fuel ON air.ac_subtype = fuel.ac_subtype
+WHERE fli.status <> 'Cancelled'								-- Nur nicht stornierte Flüge
+AND rout.departure_city = 'London'
+AND rout.arrival_city IN ('Basel','Trondheim','Glasgow')
+AND air.manufacturer IS NOT NULL
+AND air.ac_subtype IS NOT NULL
+ORDER BY rout.arrival_city
 
