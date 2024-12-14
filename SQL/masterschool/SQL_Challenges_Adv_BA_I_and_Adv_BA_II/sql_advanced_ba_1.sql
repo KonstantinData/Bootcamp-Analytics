@@ -100,7 +100,24 @@ show the results of these flights.
 SELECT DISTINCT manufacturer
 FROM ba_aircraft
 
--- Step 2 ensures that there are no blanks, NULL values, or special characters that might not be visible
+-- Step 2 ensures that the two flight_id columns do not contain any differing values.
+SELECT
+flight_id
+FROM ba_aircraft
+EXCEPT
+SELECT
+flight_id
+FROM ba_flights
+
+
+SELECT
+flight_id
+EXCEPT
+SELECT
+flight_id
+FROM ba_aircraftFROM ba_flights
+
+-- Step 3 ensures that there are no blanks, NULL values, or special characters that might not be visible
 
 
 WITH clean_manufacturer AS (
@@ -113,6 +130,7 @@ WITH clean_manufacturer AS (
       AND TRIM(manufacturer) <> ''
       AND manufacturer !~ '[^a-zA-Z0-9]'
 )
+-- Step 4 generates the actuel result
 SELECT
     clm.manufacturer,
     COUNT(DISTINCT clm.ac_subtype) AS subtype,  -- Anzahl der ac_subtype-Einträge
@@ -130,4 +148,6 @@ AND routes.arrival_city IN ('Basel','Trondheim','Glasgow')
 GROUP BY clm.manufacturer
 ORDER BY num_flights DESC
 LIMIT 1;                   -- Sortie
+
+
 
