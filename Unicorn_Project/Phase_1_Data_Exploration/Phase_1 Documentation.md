@@ -1,84 +1,72 @@
-## Data Exploration Process
+# **Phase 1: Data Exploration Process**
 
-Before addressing the data exploration questions, I first review the content of the tables to assess how the data has been entered. This includes checking for:
-- Special characters  
-- Multiple pieces of information within a single column  
-- Null values  
+## **1. General Approach**
 
-Additionally, I examine the formatting of individual columns, such as:  
-- **String values**  
-- **Text values**  
-- **Date values**  
+Bevor ich spezifische Fragen zur Datenanalyse beantworte, führe ich eine **erste Datenprüfung** durch. Ziel ist es, die Struktur und Qualität der Daten zu verstehen und mögliche Bereinigungsbedarfe zu identifizieren:
 
-This approach ensures a better understanding of the data structure and helps identify potential data cleaning or transformation needs.
+- **Überprüfung auf:**
+   - Sonderzeichen  
+   - Mehrfachinformationen in einer Spalte  
+   - Null-Werte  
 
-## Customer Table Overview  
+- **Prüfung des Spaltenformats:**  
+   - **String- und Textwerte**  
+   - **Datumswerte**  
 
-The `Customers` table contains **795 entries** and includes the following columns:  
-- `customer_id`  
-- `customer_name`  
-- `customer_segment`  
+---
 
-### Customer Segments  
-Customers are divided into three segments:  
+## **2. Customer Table**
+
+### **Überblick**
+- **Anzahl Einträge:** 795  
+- **Spalten:**
+   - `customer_id`  
+   - `customer_name`  
+   - `customer_segment`  
+
+### **Kundensegmente**
+Die Kunden lassen sich in drei Segmente unterteilen:  
 1. **Consumer**  
 2. **Corporate**  
 3. **Home Office**  
 
-### Data Integrity  
-- There are **no null values** in the table.  
-- There are **no duplicate name entries**.  
-- The `customer_id` values are consistent.  
+### **Datenintegrität**
+- Keine **Null-Werte** vorhanden  
+- Keine **doppelten Namen**  
+- Konsistente Werte in der Spalte `customer_id`  
 
-### Data Type Issue with `customer_id`  
-The `customer_id` column currently uses the format `int8(64)`, which is problematic.  
+### **Datenproblem: `customer_id`**
+- Aktuelles Format: **`int8(64)`**  
+   - PostgreSQL-Syntaxfehler, da `BIGINT` (`int8`) keine Präzisionsangaben unterstützt.  
+   - Ursache: Fehler bei der Datenmigration.  
 
-In PostgreSQL, the notation **`int8(64,0)`** causes a syntax error because `BIGINT` (alias `int8`) does not support precision or scale specifications.  
-This issue often occurs during data migrations from other systems, leading to:  
-- Incorrect type interpretations  
-- Data incompatibility  
-- Unexpected behavior during queries  
-
-### Recommendations  
-To resolve this issue and prevent errors:  
-- Use **`BIGINT`** for integer values.  
-- Use **`NUMERIC(64,0)`** for precise numeric values.  
-
-This ensures data compatibility and avoids syntax errors in PostgreSQL.
+### **Lösungsvorschlag**
+- **`BIGINT`** für Ganzzahlen  
+- **`NUMERIC(64,0)`** für exakte numerische Werte  
 
 ---
 
-## 📊 **Data Analysis: Order Details**  
+## **3. Order Details Table**
 
-### **Column Overview:**  
-The `order_details` table contains the following columns:  
+### **Spaltenübersicht**
+- `order_details_id`  
+- `order_id`  
+- `product_id`  
+- `quantity`  
+- `order_discount`  
+- `order_profits`  
+- `order_profit_ratio`  
+- `order_sales`  
 
-1. **order_details_id**  
-2. **order_id**  
-3. **product_id**  
-4. **quantity**  
-5. **order_discount**  
-6. **order_profits**  
-7. **order_profit_ratio**  
-8. **order_sales**  
+### **Analyseergebnisse**
+1. **Anzahl Einträge:** 9.997  
+2. **Eindeutige Bestellungen:** 5.013 (`order_id`)  
+3. **Aufbau der `order_id`:**  
+   - **Ländercode** (z.B. US, CA)  
+   - **Jahr** (2015–2017)  
+   - **Bestellnummer**  
 
----
-
-### **Table Analysis:**
-
-1. **Total Entries:**  
-   - The table contains **9997 entries**.  
-
-2. **Unique Orders:**  
-   - The `order_id` column has **5013 unique values**, indicating that customers placed multiple orders.  
-
-3. **Composition of `order_id`:**  
-   - The `order_id` consists of three parts:  
-     - **Country Code** (e.g., "US", "CA").  
-     - **Year** (2015 to 2017).  
-     - **Order Number** (numeric identifier).  
-
-   **SQL to split the `order_id`:**  
+   **SQL zur Aufteilung:**  
    ```sql
    SELECT 
        SPLIT_PART(order_id, '-', 1) AS country_code,
@@ -86,103 +74,75 @@ The `order_details` table contains the following columns:
        SPLIT_PART(order_id, '-', 3) AS order_number
    FROM order_details;
    ```
-
-4. **Distinct Product IDs:**  
-   - The `product_id` column contains **1850 distinct values**, representing unique products in the dataset.  
-
-5. **Null Values:**  
-   - There are **no null values** in the `order_id` column.  
-
-
-### **Summary:**  
-The **`order_details`** table provides a comprehensive overview of order data, including order IDs, products, quantities, discounts, profits, and sales. These insights form the basis for further analysis of **order distribution**, **product performance**, and **profitability**. 🚀  
+4. **Eindeutige Produkte:** 1.850 (`product_id`)  
+5. **Null-Werte:** Keine in `order_id`  
 
 ---
 
-## 📊 **Data Analysis: Orders**  
+## **4. Orders Table**
 
-The structure and content of the **`orders`** table were analyzed as follows:
+### **Struktur & Analyse**
+- **Anzahl Einträge:** 5.013  
+- **Spalten:**  
+   - `order_id`, `customer_id`, `order_date`, `shipping_city`, `shipping_state`,  
+     `shipping_region`, `shipping_country`, `shipping_code`, `shipping_date`, `shipping_mode`  
 
-1. **Table Structure and Entry Count:**  
-   - The table contains **5013 entries**, which corresponds exactly to the **5013 unique orders** in the `order_details` table.  
+### **Shipping Insights**
+- **Ein Versandland:** Alle Lieferungen betreffen ein einzelnes Land (vermutlich USA).  
+- **Regionen, Staaten & Städte:**  
+   - Regionen: 4  
+   - Staaten: 49  
+   - Städte: 531  
 
-2. **Table Columns:**  
-   - The table includes the following columns:  
-     - `order_id`  
-     - `customer_id`  
-     - `order_date`  
-     - `shipping_city`  
-     - `shipping_state`  
-     - `shipping_region`  
-     - `shipping_country`  
-     - `shipping_code`  
-     - `shipping_date`  
-     - `shipping_mode`  
+### **Versandklassen**
+Vier unterschiedliche Versandklassen:  
+1. **Second Class**  
+2. **Standard Class**  
+3. **First Class**  
+4. **Same Day**  
 
-3. **Shipping Country:**  
-   - There is **only one shipping country**, indicating all shipments occur to or from a single country.  
-
-4. **Shipping Regions, States, and Cities:**  
-   - **Shipping Regions:** 4 regions  
-   - **Shipping States:** 49 states  
-   - **Shipping Cities:** 531 cities  
-
-   These findings suggest the company is likely headquartered in **Canada**, with **direct sales** in Canada and shipments exclusively to the **USA**.  
-
-5. **Shipping Modes:**  
-   - There are **4 shipping classes**:  
-     - **Second Class**  
-     - **Standard Class**  
-     - **First Class**  
-     - **Same Day**  
-
-6. **Order and Shipping Dates:**  
-   - The `order_date` and `shipping_date` fields are recorded in the format **YYYY/MM/DD:00.00.00** (date and time).  
-   - However, no actual time values are captured; only the date is relevant.  
+### **Datumsformat**
+- Format: **YYYY/MM/DD:00.00.00**  
+- Relevanz: Nur das Datum, keine Uhrzeit.  
 
 ---
 
-This analysis highlights the company's operational scope and logistics, forming the basis for further exploration into shipping efficiency and customer distribution. 🚀  
+## **5. Products Table**
+
+### **Überblick**
+- **Anzahl Einträge:** 1.850  
+- **Spalten:**  
+   - `product_id`  
+   - `product_name`  
+   - `product_category`  
+   - `product_subcategory`  
+   - `product_manufacturer`  
+
+### **Analyseergebnisse**
+1. **Produktnamen:**  
+   - Uneinheitliches Format, teilweise mit Sonderzeichen.  
+
+2. **Produktkategorien:**
+   - **3 Hauptkategorien:**  
+      - Furniture  
+      - Office Supplies  
+      - Technology  
+
+   - Aufgeteilt in **17 Unterkategorien**:  
+      z.B. Tables, Chairs, Copiers, Paper, Accessories, Binders.  
+
+3. **Hersteller:**  
+   - 183 eindeutige Hersteller  
+
+4. **Null-Werte:** Keine  
 
 ---
 
-## 📊 **Data Analysis: Products**  
+## **Zusammenfassung**
 
-### **Table Overview:**  
-The `products` table contains the following columns:  
+Die Tabellenanalyse bietet einen klaren Überblick über die Datenstruktur und ermöglicht die Identifikation von:  
+- **Datenproblemen** (z.B. `customer_id` Format).  
+- **Eindeutigen Einträgen** und **Konsistenz** der Daten.  
+- **Wichtige Erkenntnisse** zu Bestell-, Versand- und Produktinformationen.  
 
-1. **product_id**  
-2. **product_name**  
-3. **product_category**  
-4. **product_subcategory**  
-5. **product_manufacturer**  
-
----
-
-### **Table Analysis:**
-
-1. **Total Entries:**  
-   - The table contains **1850 entries**, matching the **1850 distinct product IDs** in the `order_details` table.  
-
-2. **Product Name Format:**  
-   - The `product_name` column does not follow a uniform format and contains **special characters** in some entries.  
-
-3. **Product Categories and Subcategories:**  
-   - Products are divided into **3 main categories**:  
-     - **Furniture**  
-     - **Office Supplies**  
-     - **Technology**  
-
-   - These categories are further split into **17 subcategories**, including:  
-     - Tables, Art, Bookcases, Storage, Fasteners, Envelopes, Appliances, Accessories, Paper, Phones, Binders, Copiers, Labels, Supplies, Chairs, Machines, and Furnishings.  
-
-4. **Product Manufacturers:**  
-   - There are **183 distinct product manufacturers** in the dataset.  
-
-5. **Null Values:**  
-   - There are **no null values** in any column.  
-
----
-
-### **Summary:**  
-The **`products`** table provides detailed information about the product catalog, including product IDs, names, categories, subcategories, and manufacturers. The data is clean with no null values, but inconsistencies in `product_name` formatting may require standardization for further analysis. 🚀  
+Diese Ergebnisse bilden die Grundlage für weitere Analysen zu **Bestellverteilung**, **Produktleistung** und **Versandeffizienz**. 🚀  
