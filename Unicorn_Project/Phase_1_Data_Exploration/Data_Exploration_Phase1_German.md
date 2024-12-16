@@ -1,6 +1,6 @@
 # **Phase 1: Data Exploration Process**
 
-## **1. General Approach**
+## **1. Allgemeiner Ansatz **
 
 Bevor ich spezifische Fragen zur Datenanalyse beantworte, führe ich eine **erste Datenprüfung** durch. Ziel ist es, die Struktur und Qualität der Daten zu verstehen und mögliche Bereinigungsbedarfe zu identifizieren:
 
