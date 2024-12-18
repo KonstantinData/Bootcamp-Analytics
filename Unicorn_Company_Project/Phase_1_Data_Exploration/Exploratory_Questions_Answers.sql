@@ -299,3 +299,46 @@ SELECT
 FROM order_details
 GROUP BY product_id
 HAVING SUM(quantity) >= 100
+
+--Join all database tables into one dataset that includes all unique columns and download it as a .csv file.
+
+SELECT 
+    o.order_id,
+    o.customer_id,
+    o.order_date,
+    o.shipping_city,
+    o.shipping_state,
+    o.shipping_region,
+    o.shipping_country,
+    o.shipping_postal_code,
+    o.shipping_date,
+    o.shipping_mode,
+    od.order_details_id,
+    od.product_id,
+    od.quantity,
+    od.order_discount,
+    od.order_profits,
+    od.order_profit_ratio,
+    od.order_sales,
+    c.customer_name,
+    c.customer_segment,
+    pr.product_name,
+    pr.product_category,
+    pr.product_subcategory,
+    pr.product_manufacturer
+FROM orders AS o
+JOIN order_details AS od 
+    ON o.order_id = od.order_id
+JOIN customers AS c 
+    ON o.customer_id = c.customer_id
+JOIN product AS pr 
+    ON od.product_id = pr.product_id;
+
+
+
+
+
+
+
+
+
