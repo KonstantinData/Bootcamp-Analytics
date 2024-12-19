@@ -68,7 +68,7 @@ The `order_details` table includes the following columns:
 2. **Unique Orders:** 5,013 (`order_id`)  
 3. **Structure of `order_id`:**  
    - **Country Code** (e.g., US, CA)  
-   - **Year** (2015–2017)  
+   - **Date** (2015-01-03 – 2018-12-30)  
    - **Order Number**  
 
    **SQL to split `order_id`:**  
