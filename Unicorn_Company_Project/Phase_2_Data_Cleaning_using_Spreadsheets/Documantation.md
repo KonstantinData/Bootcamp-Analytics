@@ -5,6 +5,7 @@
 2. **Renaming to "Unicorn_Company_Project_Konstantin Milonas"**  
 
 3. **Exploration of the Table**  
+
    3.1 **Extraction of "Order Year" from Column (B) into Column (C):**  
 
    Formula: `=MID(B2, 4, 4)` as "Order Year"  
@@ -38,6 +39,6 @@
 
    I then hid the "Customer Name" column to prevent redundancy.  
 
-4. **Data Cleaning**  
+5. **Data Cleaning**  
 
    Regarding the "Order ID" column, I made a decision under section 3.3 that no cleaning is necessary. However, I would otherwise contact the stakeholder to confirm whether my assumption is correct.  
