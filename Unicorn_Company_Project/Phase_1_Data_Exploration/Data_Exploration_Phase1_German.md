@@ -63,7 +63,7 @@ Die Kunden lassen sich in drei Segmente unterteilen:
 2. **Eindeutige Bestellungen:** 5.013 (`order_id`)  
 3. **Aufbau der `order_id`:**  
    - **Ländercode** (z.B. US, CA)  
-   - **Jahr** (2015–2017)  
+   - **Datum** ((2015-01-03 – 2018-12-30) )  
    - **Bestellnummer**  
 
    **SQL zur Aufteilung:**  
