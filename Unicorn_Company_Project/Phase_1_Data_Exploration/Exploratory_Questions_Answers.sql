@@ -4,8 +4,11 @@
 
 -- 1. How many customers do we have in the data?
 
-SELECT DISTINCT customer_id
+SELECT 
+		COUNT (DISTINCT customer_id) AS count_customers
 FROM customers
+
+
 
 -- 2. What was the city with the most profit for the company in 2015?
 
@@ -14,30 +17,24 @@ SELECT
     MAX(od.order_profits) AS max_profit
 FROM orders AS o
 JOIN order_details AS od ON o.order_id = od.order_id
+WHERE TO_CHAR(o.order_date, 'YYYY') = '2015'
 GROUP BY o.shipping_city
 ORDER BY max_profit DESC
 LIMIT 1;
 
--- 3. In 2015, what was the most profitable city’s profit?
 
-WITH cte_orders AS
-(
-SELECT
-    SPLIT_PART(order_id, '-', 1) AS country_code, -- Splits the order_id and extracts the country_code in this case
-    SPLIT_PART(order_id, '-', 2) AS order_year,   -- Splits the order_id and extracts the order_year in this case
-    LEFT(CAST(order_date AS TEXT), 10)::DATE AS order_date, -- Extracts the first 10 characters as text and formats it as a date
-    LEFT(CAST(shipping_date AS TEXT), 10)::DATE AS shipping_date -- Extracts the first 10 characters as text and formats it as a date
-FROM orders
-)
+
+-- 3. In 2015, what was the most profitable city’s profit?
 
 SELECT
 		o.shipping_city,
-    MAX(od.order_profits) AS max_profit
+    SUM(od.order_profits) AS sum_profit
 FROM orders AS o
-JOIN order_details AS od ON o.order_id = od.order_id
-AND o.order_date::TEXT LIKE '2015%'
+JOIN order_details AS od 
+		ON o.order_id = od.order_id
+AND TO_CHAR(o.order_date, 'YYYY') = '2015'
 GROUP BY o.shipping_city
-ORDER BY max_profit DESC
+ORDER BY sum_profit DESC
 LIMIT 1;
 
 
@@ -57,7 +54,7 @@ SELECT
 FROM orders AS o
 JOIN order_details AS od ON o.order_id = od.order_id
 GROUP BY o.customer_id
-ORDER BY total_spend DESC;
+ORDER BY total_spend ASC;
 
 -- 6. What is the most profitable city in the State of Tennessee?
 

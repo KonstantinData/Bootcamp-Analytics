@@ -5,8 +5,11 @@
 
 -- 1. Wie viele Kunden gibt es in den Daten?
 
-SELECT DISTINCT customer_id
+SELECT 
+		COUNT (DISTINCT customer_id) AS count_customers
 FROM customers
+
+
 
 -- 2. Welche Stadt hatte den höchsten Gewinn für das Unternehmen im Jahr 2015?
 
@@ -15,34 +18,24 @@ SELECT
     MAX(od.order_profits) AS max_profit
 FROM orders AS o
 JOIN order_details AS od ON o.order_id = od.order_id
+WHERE TO_CHAR(o.order_date, 'YYYY') = '2015'
 GROUP BY o.shipping_city
 ORDER BY max_profit DESC
 LIMIT 1;
+
 
 -- 3. Wie hoch war der Gewinn der profitabelsten Stadt im Jahr 2015?
 
-WITH cte_orders AS
-(
-SELECT
-    SPLIT_PART(order_id, '-', 1) AS country_code, -- Teilt die order_id und extrahiert in diesem Fall den country_code.
-    SPLIT_PART(order_id, '-', 2) AS order_year,   -- Teilt die order_id und extrahiert in diesem Fall das order_year.
-    LEFT(CAST(order_date AS TEXT), 10)::DATE AS order_date, -- Extrahiert die ersten 10 Zeichen als Text und formatiert sie als Datum.
-    LEFT(CAST(shipping_date AS TEXT), 10)::DATE AS shipping_date -- Extrahiert die ersten 10 Zeichen als Text und formatiert sie anschließend als Datum.
-FROM orders
-)
-
 SELECT
 		o.shipping_city,
-    MAX(od.order_profits) AS max_profit
+    SUM(od.order_profits) AS sum_profit
 FROM orders AS o
-JOIN order_details AS od ON o.order_id = od.order_id
-AND o.order_date::TEXT LIKE '2015%'
+JOIN order_details AS od 
+		ON o.order_id = od.order_id
+AND TO_CHAR(o.order_date, 'YYYY') = '2015'
 GROUP BY o.shipping_city
-ORDER BY max_profit DESC
+ORDER BY sum_profit DESC
 LIMIT 1;
-
-
-Ergebnis: shipping-city = Minneapolis | max_proft = 4630
 
 -- 4. Wie viele verschiedene Städte gibt es in den Daten?
 
