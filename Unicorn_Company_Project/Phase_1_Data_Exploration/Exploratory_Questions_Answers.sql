@@ -334,7 +334,12 @@ JOIN customers AS c
 JOIN product AS pr 
     ON od.product_id = pr.product_id;
 
+/* 	For further processing in Phase 2, the exported CSV file from this query is not relevant, as a spreadsheet in Google Sheets 
+	will be provided instead. Comparing the use of a relational database with spreadsheets is intended to help us understand how 
+	information is efficiently managed by observing the differences.
 
+	End of Phase 1
+*/
 
 
 
