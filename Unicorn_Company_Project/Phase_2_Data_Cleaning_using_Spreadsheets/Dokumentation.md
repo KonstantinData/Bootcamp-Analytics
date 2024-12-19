@@ -5,6 +5,7 @@
 2. **Umbenennung in "Unicorn_Company_Project_Konstantin Milonas"**  
 
 3. **Exploration der Tabelle**  
+
    3.1 **Extraktion des "Order Jahres" aus Spalte (B) in Spalte (C):**  
 
    Formel: `=TEIL(B2, 4, 4)` als "Order Year"  
@@ -38,6 +39,6 @@
 
    Die ursprüngliche Spalte "Customer Name" wurde ausgeblendet.  
 
-4. **Bereinigung von Daten**  
+5. **Bereinigung von Daten**  
 
    Zur Spalte "Order ID" habe ich unter Punkt 3.3 bereits eine Entscheidung getroffen, dass keine Bereinigung notwendig ist. Andernfalls würde ich Kontakt mit dem Stakeholder aufnehmen, um zu klären, ob meine Annahme korrekt ist.  
