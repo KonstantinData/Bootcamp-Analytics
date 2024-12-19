@@ -337,9 +337,12 @@ JOIN customers AS c
 JOIN product AS pr 
     ON od.product_id = pr.product_id;
 
-
-
-
+/* 	Für die weitere Bearbeitung in Phase 2 spielt die exportierte CSV-Datei aus dieser Abfrage keine Rolle, da stattdessen ein Spreadsheet in Google Sheets 
+	zur Verfügung gestellt wird. Der Vergleich zwischen der Nutzung einer relationalen Datenbank und der Verwendung von Spreadsheets soll uns durch Beobachtung 
+	der Unterschiede dabei helfen zu verstehen, wie Informationen effizient gemanagt werden.
+	
+	Ende Phase 1
+*/
 
 
 
