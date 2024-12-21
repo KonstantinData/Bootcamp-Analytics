@@ -6,56 +6,56 @@
 
 3. **Exploration of the Table**  
 
-   3.1 **Extraction of "Order Year" from Column (B) into Column (C):**  
+   3.1**Extraction of "Order Year" from Column (B) into Column (C):**  
 
-   Formula: `=MID(B2, 4, 4)` as "Order Year"  
+        Formula: `=MID(B2, 4, 4)` as "Order Year"  
 
-   3.2 **Formatting the Date Columns "Order Date" and "Ship Date" into the European Date Format.**  
+   3.2**Formatting the Date Columns "Order Date" and "Ship Date" into the European Date Format.**  
 
-   3.3 **Observation Regarding "Shipping Country" Omission:**  
-   The project assumes the "Shipping Country" column is unnecessary, as all shipments go to the USA. However, reviewing the "Order ID" reveals that out of 5009 distinct "Order IDs," 4195 start with the country code "CA."  
+   3.3**Observation Regarding "Shipping Country" Omission:**  
+        The project assumes the "Shipping Country" column is unnecessary, as all shipments go to the USA. However, reviewing the "Order ID" reveals that out of 5009 distinct "Order IDs," 4195 start with the country code "CA."  
 
-   Using a pivot table, I analyzed "Order ID" as a row and a value. By applying `COUNTUNIQUE`, I calculated the unique Order IDs and used a filter "Starts with CA" to determine the relative count of those Order IDs.  
+        Using a pivot table, I analyzed "Order ID" as a row and a value. By applying `COUNTUNIQUE`, I calculated the unique Order IDs and used a filter "Starts with CA" to determine the relative count of those Order IDs.  
 
-   Since no "Order City" or similar information is available, it is reasonable to assume these orders are from Canada but shipped to the USA.  
+        Since no "Order City" or similar information is available, it is reasonable to assume these orders are from Canada but shipped to the USA.  
 
-   I extracted the country code from this column and displayed the full name as "Order State" using the following formula:  
+        I extracted the country code from this column and displayed the full name as "Order State" using the following formula:  
 
-   ```excel
-   =SWITCH(LEFT(B2, FIND("-", B2) - 1), "CA", "Canada", "US", "United States", "Unbekannt")
-   ```  
+        ```excel
+        =SWITCH(LEFT(B2, FIND("-", B2) - 1), "CA", "Canada", "US", "United States", "Unbekannt")
+        ```  
 
-   3.4 **Splitting the "Customer Name" Column:**  
-   The "Customer Name" column displays the full name, which may cause issues during searches. Therefore, I added two additional columns to split the name:  
+   3.4**Splitting the "Customer Name" Column:**  
+        The "Customer Name" column displays the full name, which may cause issues during searches. Therefore, I added two additional columns to split the name:  
 
-   - **"Last Name"**:  
-     ```excel
-     =RIGHTB(F2, LENB(F2) - FIND(" ", F2))
-     ```  
-   - **"First Name"**:  
-     ```excel
-     =LEFTB(F2, FIND(" ", F2) - 1)
-     ```  
+        - **"Last Name"**:  
+        ```excel
+        =RIGHTB(F2, LENB(F2) - FIND(" ", F2))
+        ```  
+        - **"First Name"**:  
+        ```excel
+        =LEFTB(F2, FIND(" ", F2) - 1)
+        ```  
 
-   I then hid the "Customer Name" column to prevent redundancy.  
+        I then hid the "Customer Name" column to prevent redundancy.  
 
-5. **Data Cleaning**  
+5.**Data Cleaning**  
 
-   Regarding the "Order ID" column, I made a decision under section 3.3 that no cleaning is necessary. However, I would otherwise contact the stakeholder to confirm whether my assumption is correct.  
+    Regarding the "Order ID" column, I made a decision under section 3.3 that no cleaning is necessary. However, I would otherwise contact the stakeholder to confirm whether my assumption is correct.  
 
 
 ### Completion of the Assigned Tasks  
 
-9. Calculate the unit price for each product (before discounts) and add it in a separate column.  
-   Which product is the most expensive? Note: Use the columns Quantity, Sales, and Discount.  
+9.  Calculate the unit price for each product (before discounts) and add it in a separate column.  
+    Which product is the most expensive? Note: Use the columns Quantity, Sales, and Discount.  
 
-   There is already a Unit Price column, but since it doesn’t indicate whether the price is before or after a discount, we need to calculate it based on the Sales value.  
+    There is already a Unit Price column, but since it doesn’t indicate whether the price is before or after a discount, we need to calculate it based on the Sales value.  
 
-   For this, I created a **calculated field** in the pivot table and entered the following formula:  
+    For this, I created a **calculated field** in the pivot table and entered the following formula:  
 
-   -  ```excel  
-      = IF(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))  
-      ```  
+    ```excel  
+    = IF(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))  
+    ```  
 
   #### Explanation of the Formula  
 
