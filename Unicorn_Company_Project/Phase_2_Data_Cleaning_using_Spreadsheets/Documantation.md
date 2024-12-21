@@ -46,19 +46,19 @@
 
 ### Completion of the Assigned Tasks  
 
-- **  9.  Calculate the unit price for each product (before discounts) and add it in a separate column.  
-          Which product is the most expensive? Note: Use the columns Quantity, Sales, and Discount.  
+9. Calculate the unit price for each product (before discounts) and add it in a separate column.  
+   Which product is the most expensive? Note: Use the columns Quantity, Sales, and Discount.  
 
-          There is already a Unit Price column, but since it doesn’t indicate whether the price is before or after a discount, we need to calculate it based on the Sales value.  
+   There is already a Unit Price column, but since it doesn’t indicate whether the price is before or after a discount, we need to calculate it based on the Sales value.  
 
-          For this, I created a calculated field in the pivot table and entered the following formula:  
+   For this, I created a calculated field in the pivot table and entered the following formula:  
 
-           -  ```excel  
-              = IF(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))  
-              ```  
+   -  ```excel  
+      = IF(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))  
+      ```  
 
-      ##  Explanation of the Formula  
+  #### Explanation of the Formula  
 
-          The formula calculates the unit price either directly from sales and quantity when the discount is 100%, or reconstructs the original unit price before the discount by dividing the discounted unit price by the remaining percentage.  
+  The formula calculates the unit price either directly from sales and quantity when the discount is 100%, or reconstructs the original unit price before the discount by dividing the discounted unit price by the remaining percentage.  
 
-          The first part of the formula ensures that there are no NULL values.  
+  The first part of the formula ensures that there are no NULL values.  
