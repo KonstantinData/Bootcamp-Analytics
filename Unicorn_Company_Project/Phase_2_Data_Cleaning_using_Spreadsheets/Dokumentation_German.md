@@ -39,6 +39,39 @@
 
 ### Erfüllung der vorgegebenen Aufgaben  
 
+1. **Welche Stadt hatte die höchsten Verkäufe?**
+
+   `New York City´
+
+2. **Wie hoch ist der durchschnittliche Rabatt für alle Bestellungen?**
+
+   `Durchschnittlicher Rabatt für alle Bestellungen = 15,62 %´
+
+3. **Welches ist das beliebteste Produkt bei Kunden im Segment "Consumer"?**
+
+   `Das beliebteste Produkt bei Kunden im Segment "Consumer" sind **Heftumschläge**´
+
+4. **Wie hoch ist der Gesamtgewinn für die Kategorie "Office Supplies"?**
+
+   `Der Gesamtgewinn beträgt 122474´
+
+5. **Wer ist der Kunde, der die meisten Einkäufe getätigt hat?**  
+   *(Tipp: Verwenden Sie die „Order ID“-Spalte, um die Frage zu beantworten.)*
+
+   `Der Kunde mit den meisten Einkäufen ist Sean Miller mit der Kunden-ID CA-2015-145317´
+
+6. **Welcher Bundesstaat hat den größten Gewinn erzielt?**
+
+   `Der Bundesstaat Kalifornien erzielte 76368 Umsatz´
+
+7. **Wie viele Bestellungen wurden über die Versandart "Standard Class" versendet?**
+
+   `5968 Bestellungen wurden über "Standard Class" versendet´
+
+8. **Welche Region hatte im Monat Juni den höchsten Umsatz?**
+
+   `Die "West"-Region erzielte mit 55953 den höchsten Umsatz im Monat Juni´
+
 9. Berechne den Preis pro Einheit für jedes Produkt (vor Rabatten) und füge ihn in einer separaten Spalte ein.  
    Welches ist das teuerste Produkt? Hinweis: Verwende die Spalten Menge (Quantity), Verkäufe (Sales) und Rabatt (Discount).  
 

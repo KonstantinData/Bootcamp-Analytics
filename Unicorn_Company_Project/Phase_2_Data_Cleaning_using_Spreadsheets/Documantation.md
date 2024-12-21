@@ -39,8 +39,41 @@
 
 ### Completion of the Assigned Tasks  
 
-9. Calculate the unit price for each product (before discounts) and add it in a separate column.  
-   Which product is the most expensive? Note: Use the columns Quantity, Sales, and Discount.  
+1. **Which city had the highest sales?**
+
+   `New York City`
+
+2. **What is the average discount for all orders?**
+
+   `Average discount for all orders = 15.62 %`
+
+3. **What is the most popular product among customers in the "Consumer" segment?**
+
+   `The most popular product among customers in the "Consumer" segment is **staple envelopes**`
+
+4. **What is the total profit for the "Office Supplies" category?**
+
+   `The total profit is 122474`
+
+5. **Who is the customer who has made the most purchases?**  
+   *(Hint: Use the “Order ID” column to answer this question.)*
+
+   `The customer with the most purchases is Sean Miller with the customer-id CA-2015-145317`
+
+6. **Which state made the most profit?**
+
+   `The state of California generated 76368 in sales`
+
+7. **How many orders were shipped via "Standard Class" ship mode?**
+
+   `5968 orders were shipped by "Standard Class"`
+
+8. **Which region had the highest sales in the month of June?**
+
+   `The "West" region made 55953, the highest sales in the month of June`
+
+9. **Calculate the unit price for each product (before discounts) and add it in a separate column.  
+   Which product is the most expensive? Note: Use the columns Quantity, Sales, and Discount.**  
 
    There is already a Unit Price column, but since it doesn’t indicate whether the price is before or after a discount, we need to calculate it based on the Sales value.  
 
