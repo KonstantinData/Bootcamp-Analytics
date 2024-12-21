@@ -6,39 +6,74 @@
 
 3. **Exploration der Tabelle**  
 
-   3.1 **Extraktion des "Order Jahres" aus Spalte (B) in Spalte (C):**  
+   3.1  **Extraktion des "Order Jahres" aus Spalte (B) in Spalte (C):**  
 
-   Formel: `=TEIL(B2, 4, 4)` als "Order Year"  
+        "Order Year"  
+        - ```excel
+          =TEIL(B2, 4, 4)
+          ``` 
 
-   3.2 **Formatierung der Datumsspalten "Order Date" und "Ship Date" in das europäische Datumsformat.**  
+          als "Order Year"
 
-   3.3 **Beobachtung zur Auslassung der Spalte "Shipping Country":**  
-   Im Projekt wird angenommen, dass die Spalte "Shipping Country" weggelassen wurde, da alle Lieferungen in die USA gehen. Eine Überprüfung der "Order ID" zeigt jedoch, dass von insgesamt 5009 eindeutigen "Order IDs" 4195 mit der Länderkennung "CA" beginnen.  
+   3.2  **Formatierung der Datumsspalten "Order Date" und "Ship Date" in das europäische Datumsformat.**  
 
-   Mithilfe einer Pivot-Tabelle habe ich die "Order ID" als Zeile und Wert analysiert. Mit der Funktion `COUNTUNIQUE` konnte ich die einzigartigen Order IDs berechnen und durch einen Filter "Beginnt mit CA" den relativen Anteil ermitteln.  
+   3.3  **Beobachtung zur Auslassung der Spalte "Shipping Country":**  
+        Im Projekt wird angenommen, dass die Spalte "Shipping Country" weggelassen wurde, da alle Lieferungen 
+        in die USA gehen. Eine Überprüfung der "Order ID" zeigt jedoch, dass von insgesamt 5009 eindeutigen 
+        "Order IDs" 4195 mit der Länderkennung "CA" beginnen.  
 
-   Da keine "Order City" oder ähnliche Angaben vorliegen, ist anzunehmen, dass diese Aufträge aus Kanada stammen und in die USA geliefert werden.  
+        Mithilfe einer Pivot-Tabelle habe ich die "Order ID" als Zeile und Wert analysiert. Mit der Funktion 
+        `COUNTUNIQUE` konnte ich die einzigartigen Order IDs berechnen und durch einen Filter "Beginnt mit CA" 
+        den relativen Anteil ermitteln.  
 
-   Ich habe das Länderkürzel aus der Spalte extrahiert und als vollen Namen unter "Order State" angezeigt:  
+        Da keine "Order City" oder ähnliche Angaben vorliegen, ist anzunehmen, dass diese Aufträge aus Kanada 
+        stammen und in die USA geliefert werden.  
 
-   ```excel
-   =SWITCH(LEFT(B2, FIND("-", B2) - 1), "CA", "Canada", "US", "United States", "Unbekannt")
-   ```  
+        Ich habe das Länderkürzel aus der Spalte extrahiert und als vollen Namen unter "Order State" angezeigt:  
 
-   3.4 **Aufteilung der Spalte "Customer Name":**  
-   Die Spalte "Customer Name" enthält den vollständigen Namen, was bei Suchen zu Fehlern führen kann. Daher habe ich zwei zusätzliche Spalten eingefügt, um den Namen aufzuteilen:  
+        - ```excel
+          =SWITCH(LEFT(B2, FIND("-", B2) - 1), "CA", "Canada", "US", "United States", "Unbekannt")
+          ```  
 
-   - **"Last Name"**:  
-     ```excel
-     =RIGHTB(F2, LENB(F2) - FIND(" ", F2))
-     ```  
-   - **"First Name"**:  
-     ```excel
-     =LEFTB(F2, FIND(" ", F2) - 1)
-     ```  
+   3.4  **Aufteilung der Spalte "Customer Name":**  
+        Die Spalte "Customer Name" enthält den vollständigen Namen, was bei Suchen zu Fehlern führen kann. 
+        Daher habe ich zwei zusätzliche Spalten eingefügt, um den Namen aufzuteilen:  
+
+        - **"Last Name"**:  
+          ```excel
+          =RIGHTB(F2, LENB(F2) - FIND(" ", F2))
+          ```  
+        - **"First Name"**:  
+          ```excel
+          =LEFTB(F2, FIND(" ", F2) - 1)
+          ```  
 
    Die ursprüngliche Spalte "Customer Name" wurde ausgeblendet.  
 
-5. **Bereinigung von Daten**  
+4. **Bereinigung von Daten**  
 
-   Zur Spalte "Order ID" habe ich unter Punkt 3.3 bereits eine Entscheidung getroffen, dass keine Bereinigung notwendig ist. Andernfalls würde ich Kontakt mit dem Stakeholder aufnehmen, um zu klären, ob meine Annahme korrekt ist.  
+   Zur Spalte "Order ID" habe ich unter Punkt 3.3 bereits eine Entscheidung getroffen, dass keine Bereinigung notwendig ist. 
+   Andernfalls würde ich Kontakt mit dem Stakeholder aufnehmen, um zu klären, ob meine Annahme korrekt ist.
+
+### Beantwortung der vorgegebenen Aufgaben
+
+- **9.  Berechne den Preis pro Einheit für jedes Produkt (vor Rabatten) und füge ihn in einer separaten Spalte ein.
+        Welches ist das teuerste Produkt? Hinweis: Verwende die Spalten Menge (Quantity), Verkäufe (Sales) und 
+        Rabatt (Discount)
+
+        Es git bereits eine Spalte Unit Preis da man jedoch aus dieser nicht ableiten kann ob der Preis vor oder nach
+        einem Rabatt ist, müssen wir diesen aus dem Sales Preis berechnen. 
+
+        Hierzu habe ich in der Pivot Tabelle ein Berechnetes Feld angelegt und folgende Formel eingeben:
+
+        - ```excel
+          = WENN(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))
+          ```
+
+        ## Erklärung der Formel
+
+        Die Formel berechnet den Stückpreis entweder direkt aus Umsatz und Menge, wenn der Rabatt 100 % beträgt, oder 
+        stellt den ursprünglichen Stückpreis vor Rabatt wieder her, indem der rabattierte Stückpreis durch den 
+        verbleibenden Prozentsatz geteilt wird.
+
+        Durch den ersten Teil der Formel wird sicher gestellt, das es keinen NULL Wert gibt.
