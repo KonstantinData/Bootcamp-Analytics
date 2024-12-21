@@ -28,11 +28,11 @@
    3.4**Splitting the "Customer Name" Column:**  
         The "Customer Name" column displays the full name, which may cause issues during searches. Therefore, I added two additional columns to split the name:  
 
-        **"Last Name"**:  
+      **Last Name**:  
         ```excel
         =RIGHTB(F2, LENB(F2) - FIND(" ", F2))
         ```  
-        **"First Name"**:  
+      **First Name**:  
         ```excel
         =LEFTB(F2, FIND(" ", F2) - 1)
         ```  
