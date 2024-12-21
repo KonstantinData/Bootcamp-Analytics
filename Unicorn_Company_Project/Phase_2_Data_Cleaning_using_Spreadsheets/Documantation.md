@@ -48,8 +48,8 @@
 
    `= IF(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))`  
 
-#### Explanation of the Formula  
+**Explanation of the Formula**  
 
-The formula calculates the unit price either directly from sales and quantity when the discount is 100%, or reconstructs the original unit price before the discount by dividing the discounted unit price by the remaining percentage.  
+  The formula calculates the unit price either directly from sales and quantity when the discount is 100%, or reconstructs the original unit price before the discount by dividing the discounted unit price by the remaining percentage.  
 
-The first part of the formula ensures that there are no NULL values.  
+  The first part of the formula ensures that there are no NULL values.  
