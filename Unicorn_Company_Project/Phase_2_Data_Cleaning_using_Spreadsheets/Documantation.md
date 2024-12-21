@@ -51,7 +51,7 @@
 
    There is already a Unit Price column, but since it doesn’t indicate whether the price is before or after a discount, we need to calculate it based on the Sales value.  
 
-   For this, I created a calculated field in the pivot table and entered the following formula:  
+   For this, I created a **calculated field** in the pivot table and entered the following formula:  
 
    -  ```excel  
       = IF(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))  
