@@ -61,10 +61,10 @@
         Welches ist das teuerste Produkt? Hinweis: Verwende die Spalten Menge (Quantity), Verkäufe (Sales) und 
         Rabatt (Discount)
 
-        Es git bereits eine Spalte Unit Preis da man jedoch aus dieser nicht ableiten kann ob der Preis vor oder nach
+    **  Es git bereits eine Spalte Unit Preis da man jedoch aus dieser nicht ableiten kann ob der Preis vor oder nach
         einem Rabatt ist, müssen wir diesen aus dem Sales Preis berechnen. 
 
-        Hierzu habe ich in der Pivot Tabelle ein Berechnetes Feld angelegt und folgende Formel eingeben:
+    **  Hierzu habe ich in der Pivot Tabelle ein Berechnetes Feld angelegt und folgende Formel eingeben:
 
         - ```excel
           = WENN(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))
