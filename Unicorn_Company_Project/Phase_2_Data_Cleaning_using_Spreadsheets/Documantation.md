@@ -102,44 +102,46 @@
 15. **Create a new column that concatenates the customer name, city, and state into a single string for each order.**
 
 16. **Use the IFS function to create a new column that categorizes each order as "High," "Low," or "Loss" based on profit
-      and sales criteria.*
+    and sales criteria.**
 
-   **"High"** is considered as:
-         - If sales are above 200 and profit is above 20
-         - If profit is above 40.
-      For other cases:
-         - If the profit is equal or below 0 this is categorized as “Loss”
-         - Any other case this is categorized as "Low"
+    **"High"** is considered as:
+    - If sales are above 200 and profit is above 20
+    - If profit is above 40.
 
-   16.1  Use conditional formatting to color the columns with the values “High” in green, the 
-   value “Low” in yellow andthe value “Loss” in red.**
-   
-   16.2  How many “Loss” cases do you have?
+    For other cases:
+    - If the profit is equal or below 0 this is categorized as “Loss”
+    - Any other case this is categorized as "Low"
 
-   
-   16.3  In a new sheet, create a dropdown of category and product which returns the price 
-         for a unit (which you previously solved in exercise 9.)
+16.1 **Use conditional formatting to color the columns with the values “High” in green, the 
+value “Low” in yellow and the value “Loss” in red.**
 
-         Hint:
-         16.3.1   In order to make your job easier and for it to look cleaner, you should first define "named ranges" for e
-                  column you will use - product name, category, unit price.
+16.2 **How many “Loss” cases do you have?**
 
-         16.3.2   Create a drop-down list of categories:
-                  -  In a separate cell, use data validation to create a drop-down list of categories, 
-                     using the category column in your data as the source.
+16.3 **In a new sheet, create a dropdown of category and product which returns the price 
+for a unit (which you previously solved in exercise 9.)**
 
-                  -  In the data validation criteria, use “Dropdown (from a range)” and put the named range 
-                     of your category column in there.
-   
-         16.3.3   In a separate sheet, use the “filter” function to filter the products based on 
-                  your chosen category. Give this a named range too.
+> **Hint**:  
 
-         16.3.4   Create a drop-down list of product names based on the selected category; use this name 
-                  range you have created in the separate sheet.
+> 16.3.1 In order to make your job easier and for it to look cleaner, you should first define "named ranges" for each  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;column you will use – product name, category, unit price.
 
-         16.3.5   Use the INDEX MATCH function to find the corresponding product unit price. You could use this structure:
+> 16.3.2 Create a drop-down list of categories:
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- In a separate cell, use data validation to create a drop-down list of categories,   
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;using the category column in your data as the source.  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- In the data validation criteria, use “Dropdown (from a range)” and put the named range  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of your category column in there.
 
-                  `=INDEX(unit_price, MATCH(1, (category=The_category_cell)*(product_name=The_product_cell), 0), 1)´
+> 16.3.3 In a separate sheet, use the “filter” function to filter the products based on  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;your chosen category. Give this a named range too.
 
-                  **Note: Unit_price, category, and product_name are named ranges.
-                  Note: If the named range doesn't work, try to insert the range itself.**
+> 16.3.4 Create a drop-down list of product names based on the selected category; use this name  
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;range you have created in the separate sheet.
+
+> 16.3.5 Use the INDEX MATCH function to find the corresponding product unit price. You could use this structure:
+> 
+> ```none
+> =INDEX(unit_price, MATCH(1, (category=The_category_cell)*(product_name=The_product_cell), 0), 1)
+> ```
+> 
+> **Note**: `unit_price`, `category`, and `product_name` are named ranges.  
+> **Note**: If the named range doesn't work, try to insert the range itself.
