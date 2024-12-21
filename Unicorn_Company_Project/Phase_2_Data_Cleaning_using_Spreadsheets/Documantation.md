@@ -20,22 +20,16 @@
 
    I extracted the country code from this column and displayed the full name as "Order State" using the following formula:  
 
-   ```excel
-   =SWITCH(LEFT(B2, FIND("-", B2) - 1), "CA", "Canada", "US", "United States", "Unbekannt")
-   ```  
+   `=SWITCH(LEFT(B2, FIND("-", B2) - 1), "CA", "Canada", "US", "United States", "Unbekannt")`  
 
    3.4 Splitting the "Customer Name" Column:  
    The "Customer Name" column displays the full name, which may cause issues during searches. Therefore, I added two additional columns to split the name:  
 
    Last Name:  
-   ```excel
-   =RIGHTB(F2, LENB(F2) - FIND(" ", F2))
-   ```  
+   `=RIGHTB(F2, LENB(F2) - FIND(" ", F2))`  
 
    First Name:  
-   ```excel
-   =LEFTB(F2, FIND(" ", F2) - 1)
-   ```  
+   `=LEFTB(F2, FIND(" ", F2) - 1)`  
 
    I then hid the "Customer Name" column to prevent redundancy.  
 
@@ -52,9 +46,7 @@
 
    For this, I created a calculated field in the pivot table and entered the following formula:  
 
-   ```excel
-   = IF(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))
-   ```  
+   `= IF(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))`  
 
 #### Explanation of the Formula  
 
