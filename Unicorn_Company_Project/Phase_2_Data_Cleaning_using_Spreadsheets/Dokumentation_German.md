@@ -1,79 +1,55 @@
-### Dokumentation der Phase 2: Datenbereinigung und Exploration mit Spreadsheets  
+### Dokumentation Phase 2: Datenbereinigung und Exploration mit Tabellenkalkulationen  
 
-1. **Import und Kopie der Tabelle**  
+1. Import und Kopie der Tabelle  
 
-2. **Umbenennung in "Unicorn_Company_Project_Konstantin Milonas"**  
+2. Umbenennen in "Unicorn_Company_Project_Konstantin Milonas"  
 
-3. **Exploration der Tabelle**  
+3. Exploration der Tabelle  
 
-   3.1  **Extraktion des "Order Jahres" aus Spalte (B) in Spalte (C):**  
+   3.1 Extraktion des "Bestelljahres" aus Spalte (B) in Spalte (C):  
+   Formel: `=MID(B2, 4, 4)` als "Bestelljahr"  
 
-        "Order Year"  
-        - ```excel
-          =TEIL(B2, 4, 4)
-          ``` 
+   3.2 Formatierung der Datenspalten "Bestelldatum" und "Versanddatum" in das europäische Datumsformat.  
 
-          als "Order Year"
+   3.3 Beobachtung zur Auslassung der Spalte "Versandland":  
+   Es wird angenommen, dass die Spalte "Versandland" nicht erforderlich ist, da alle Lieferungen in die USA gehen. Bei Überprüfung der "Bestell-ID" zeigt sich jedoch, dass von 5009 verschiedenen "Bestell-IDs" 4195 mit dem Ländercode "CA" beginnen.  
 
-   3.2  **Formatierung der Datumsspalten "Order Date" und "Ship Date" in das europäische Datumsformat.**  
+   Mithilfe einer Pivot-Tabelle habe ich "Bestell-ID" als Zeile und Wert analysiert. Durch die Anwendung von `COUNTUNIQUE` habe ich die eindeutigen Bestell-IDs berechnet und einen Filter "Beginnt mit CA" verwendet, um die relative Anzahl dieser Bestell-IDs zu ermitteln.  
 
-   3.3  **Beobachtung zur Auslassung der Spalte "Shipping Country":**  
-        Im Projekt wird angenommen, dass die Spalte "Shipping Country" weggelassen wurde, da alle Lieferungen 
-        in die USA gehen. Eine Überprüfung der "Order ID" zeigt jedoch, dass von insgesamt 5009 eindeutigen 
-        "Order IDs" 4195 mit der Länderkennung "CA" beginnen.  
+   Da keine Informationen zu "Bestellstadt" oder ähnlichem verfügbar sind, ist es naheliegend anzunehmen, dass diese Bestellungen aus Kanada stammen, jedoch in die USA geliefert werden.  
 
-        Mithilfe einer Pivot-Tabelle habe ich die "Order ID" als Zeile und Wert analysiert. Mit der Funktion 
-        `COUNTUNIQUE` konnte ich die einzigartigen Order IDs berechnen und durch einen Filter "Beginnt mit CA" 
-        den relativen Anteil ermitteln.  
+   Ich habe den Ländercode aus dieser Spalte extrahiert und den vollständigen Namen als "Bestellstatus" mit der folgenden Formel angezeigt:  
 
-        Da keine "Order City" oder ähnliche Angaben vorliegen, ist anzunehmen, dass diese Aufträge aus Kanada 
-        stammen und in die USA geliefert werden.  
+   `=SWITCH(LEFT(B2, FIND("-", B2) - 1), "CA", "Kanada", "US", "Vereinigte Staaten", "Unbekannt")`  
 
-        Ich habe das Länderkürzel aus der Spalte extrahiert und als vollen Namen unter "Order State" angezeigt:  
+   3.4 Aufteilung der Spalte "Kundenname":  
+   Die Spalte "Kundenname" zeigt den vollständigen Namen an, was bei der Suche nach Daten problematisch sein könnte. Daher habe ich zwei zusätzliche Spalten hinzugefügt, um den Namen aufzuteilen:  
 
-        - ```excel
-          =SWITCH(LEFT(B2, FIND("-", B2) - 1), "CA", "Canada", "US", "United States", "Unbekannt")
-          ```  
+   Nachname:  
+   `=RIGHTB(F2, LENB(F2) - FIND(" ", F2))`  
 
-   3.4  **Aufteilung der Spalte "Customer Name":**  
-        Die Spalte "Customer Name" enthält den vollständigen Namen, was bei Suchen zu Fehlern führen kann. 
-        Daher habe ich zwei zusätzliche Spalten eingefügt, um den Namen aufzuteilen:  
+   Vorname:  
+   `=LEFTB(F2, FIND(" ", F2) - 1)`  
 
-        - **"Last Name"**:  
-          ```excel
-          =RIGHTB(F2, LENB(F2) - FIND(" ", F2))
-          ```  
-        - **"First Name"**:  
-          ```excel
-          =LEFTB(F2, FIND(" ", F2) - 1)
-          ```  
+   Anschließend habe ich die Spalte "Kundenname" ausgeblendet, um Redundanzen zu vermeiden.  
 
-   Die ursprüngliche Spalte "Customer Name" wurde ausgeblendet.  
+5. Datenbereinigung  
 
-4. **Bereinigung von Daten**  
+   Für die Spalte "Bestell-ID" habe ich in Abschnitt 3.3 beschlossen, dass keine Bereinigung erforderlich ist. Sollte es dennoch Unklarheiten geben, würde ich Rücksprache mit dem Stakeholder halten, um meine Annahme zu bestätigen.  
 
-   Zur Spalte "Order ID" habe ich unter Punkt 3.3 bereits eine Entscheidung getroffen, dass keine Bereinigung notwendig ist. 
-   Andernfalls würde ich Kontakt mit dem Stakeholder aufnehmen, um zu klären, ob meine Annahme korrekt ist.
+### Erfüllung der vorgegebenen Aufgaben  
 
-### Beantwortung der vorgegebenen Aufgaben
+9. Berechne den Preis pro Einheit für jedes Produkt (vor Rabatten) und füge ihn in einer separaten Spalte ein.  
+   Welches ist das teuerste Produkt? Hinweis: Verwende die Spalten Menge (Quantity), Verkäufe (Sales) und Rabatt (Discount).  
 
-- **9.  Berechne den Preis pro Einheit für jedes Produkt (vor Rabatten) und füge ihn in einer separaten Spalte ein.
-        Welches ist das teuerste Produkt? Hinweis: Verwende die Spalten Menge (Quantity), Verkäufe (Sales) und 
-        Rabatt (Discount)
+   Es gibt bereits eine Spalte "Einheitspreis", aber da sie nicht angibt, ob der Preis vor oder nach einem Rabatt liegt, muss der Einheitspreis auf Basis des Verkaufswertes berechnet werden.  
 
-    **  Es git bereits eine Spalte Unit Preis da man jedoch aus dieser nicht ableiten kann ob der Preis vor oder nach
-        einem Rabatt ist, müssen wir diesen aus dem Sales Preis berechnen. 
+   Zu diesem Zweck habe ich ein berechnetes Feld in der Pivot-Tabelle erstellt und die folgende Formel eingegeben:  
 
-    **  Hierzu habe ich in der Pivot Tabelle ein Berechnetes Feld angelegt und folgende Formel eingeben:
+   `= WENN(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))`  
 
-        - ```excel
-          = WENN(Discount = 1, Sales / Quantity, (Sales / Quantity) / (1 - Discount))
-          ```
+   **Erklärung der Formel**  
 
-        ## Erklärung der Formel
+   Die Formel berechnet den Stückpreis entweder direkt aus Umsatz und Menge, wenn der Rabatt 100 % beträgt, oder stellt den ursprünglichen Stückpreis vor Rabatt wieder her, indem der rabattierte Stückpreis durch den verbleibenden Prozentsatz geteilt wird.  
 
-        Die Formel berechnet den Stückpreis entweder direkt aus Umsatz und Menge, wenn der Rabatt 100 % beträgt, oder 
-        stellt den ursprünglichen Stückpreis vor Rabatt wieder her, indem der rabattierte Stückpreis durch den 
-        verbleibenden Prozentsatz geteilt wird.
-
-        Durch den ersten Teil der Formel wird sicher gestellt, das es keinen NULL Wert gibt.
+   Der erste Teil der Formel stellt sicher, dass es keine NULL-Werte gibt.  
