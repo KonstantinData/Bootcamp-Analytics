@@ -139,48 +139,48 @@
 
       
       16.3.1   In order to make your job easier and for it to look cleaner, you should first define 
-                  "named ranges" for every column you will use - product name, category, unit price.
+               "named ranges" for every column you will use - product name, category, unit price.
 
-                  `Created named ranges for: Category, Product Name, and Unit Price Before Discount. These 
-                  named ranges can now be used on a new sheet to create search tools such as drop-down menus, 
-                  filters, INDEX functions, and more.´
+               `Created named ranges for: Category, Product Name, and Unit Price Before Discount. These 
+               named ranges can now be used on a new sheet to create search tools such as drop-down menus, 
+               filters, INDEX functions, and more.´
 
       16.3.2   Create a drop-down list of categories:
 
-                  -  In a separate cell, use data validation to create a drop-down list of categories, using 
-                     the category column in your data as the source. In the data validation criteria, use 
-                     “Dropdown (from a range)” and input the named range for your category column.
+            -  In a separate cell, use data validation to create a drop-down list of categories, using 
+               the category column in your data as the source. In the data validation criteria, use 
+               “Dropdown (from a range)” and input the named range for your category column.
 
-                     `I created a new sheet named vs02_16.3 - 16.5. Using data validation, I created a dropdown 
-                     using the criteria defined in the previously created named range: "Category".´
+               `I created a new sheet named vs02_16.3 - 16.5. Using data validation, I created a dropdown 
+               using the criteria defined in the previously created named range: "Category".´
                     
    
       16.3.3   In a separate sheet, use the “filter” function to filter the products based on 
-                  your chosen category. Give this a named range too.
+               your chosen category. Give this a named range too.
 
-                  'For better display, I decided not to create an extra sheet. Instead, I added a column 
-                  titled "Pre-Filter for Product Names on Category on the "vs02_16.3 - 16.5 sheet"´
+               'For better display, I decided not to create an extra sheet. Instead, I added a column 
+               titled "Pre-Filter for Product Names on Category on the "vs02_16.3 - 16.5 sheet"´
    
-                  =FILTER(Product_Name, Category = A2)
+               =FILTER(Product_Name, Category = A2)
 
 
-                  `This formula populates the "Pre-Filter for Product Names on Category" column with the 
-                  product names that match the chosen category from the dropdown list.´
+               `This formula populates the "Pre-Filter for Product Names on Category" column with the 
+               product names that match the chosen category from the dropdown list.´
 
       16.3.4   Create a drop-down list of product names based on the selected category; use this name 
-                  range you have created in the separate sheet.
+               range you have created in the separate sheet.
 
-                  `I could have created a further name-range on the "pre-filter for Product Names on Category"
-                  column, but I just used the regular range ='vs02_16.3 - 16.5'!$E2:$E to create the dropdown.
+               `I could have created a further name-range on the "pre-filter for Product Names on Category"
+               column, but I just used the regular range ='vs02_16.3 - 16.5'!$E2:$E to create the dropdown.
 
-                  `"Important Note: If the category is changed, an error will appear in the Product Name column, 
-                  indicating that the input must be within the required range. This error will disappear as soon 
-                  as a selection is made from the updated Product Name drop-down list."**´
+               `"Important Note: If the category is changed, an error will appear in the Product Name column, 
+               indicating that the input must be within the required range. This error will disappear as soon 
+               as a selection is made from the updated Product Name drop-down list."**´
 
 
       16.3.5   Use the INDEX MATCH function to find the corresponding product unit price. You could use this structure:
 
-                  =INDEX(Unit_Price_before_Discount; VERGLEICH(B2;Product_Name; 0))
+               =INDEX(Unit_Price_before_Discount; VERGLEICH(B2;Product_Name; 0))
 
-                  `This formula will display the price of the "Product_Name". In this case I desided to display
-                  the price calculated before discount´
+               `This formula will display the price of the "Product_Name". In this case I desided to display
+               the price calculated before discount´
