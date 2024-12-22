@@ -137,15 +137,15 @@
    16.3  In a new sheet, create a dropdown of category and product which returns the price 
          for a unit (which you previously solved in exercise 9.)
 
-         Hint:
-         16.3.1   In order to make your job easier and for it to look cleaner, you should first define 
+      
+      16.3.1   In order to make your job easier and for it to look cleaner, you should first define 
                   "named ranges" for every column you will use - product name, category, unit price.
 
                   `Created named ranges for: Category, Product Name, and Unit Price Before Discount. These 
                   named ranges can now be used on a new sheet to create search tools such as drop-down menus, 
                   filters, INDEX functions, and more.´
 
-         16.3.2   Create a drop-down list of categories:
+      16.3.2   Create a drop-down list of categories:
 
                   -  In a separate cell, use data validation to create a drop-down list of categories, using 
                      the category column in your data as the source. In the data validation criteria, use 
@@ -155,7 +155,7 @@
                      using the criteria defined in the previously created named range: "Category".´
                     
    
-         16.3.3   In a separate sheet, use the “filter” function to filter the products based on 
+      16.3.3   In a separate sheet, use the “filter” function to filter the products based on 
                   your chosen category. Give this a named range too.
 
                   'For better display, I decided not to create an extra sheet. Instead, I added a column 
@@ -167,7 +167,7 @@
                   `This formula populates the "Pre-Filter for Product Names on Category" column with the 
                   product names that match the chosen category from the dropdown list.´
 
-         16.3.4   Create a drop-down list of product names based on the selected category; use this name 
+      16.3.4   Create a drop-down list of product names based on the selected category; use this name 
                   range you have created in the separate sheet.
 
                   `I could have created a further name-range on the "pre-filter for Product Names on Category"
@@ -178,7 +178,7 @@
                   as a selection is made from the updated Product Name drop-down list."**´
 
 
-         16.3.5   Use the INDEX MATCH function to find the corresponding product unit price. You could use this structure:
+      16.3.5   Use the INDEX MATCH function to find the corresponding product unit price. You could use this structure:
 
                   =INDEX(Unit_Price_before_Discount; VERGLEICH(B2;Product_Name; 0))
 
