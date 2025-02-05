@@ -110,3 +110,255 @@ https://docs.getdbt.com/docs/configure-your-profile
 [0m17:03:09.479265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002656FB0FEC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002656FCB7FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002657010E210>]}
 [0m17:03:09.479265 [debug] [MainThread]: Flushing usage events
 [0m17:03:09.933888 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:52:38.561044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E0903A9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E092FFF020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E093654F20>]}
+
+
+============================== 21:52:38.567040 | c76ee9ee-0f3d-44f6-b74e-616640f3d8a4 ==============================
+[0m21:52:38.567040 [info ] [MainThread]: Running with dbt=1.9.2
+[0m21:52:38.567969 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\konst\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug --target snowflake', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m21:52:38.605876 [info ] [MainThread]: dbt version: 1.9.2
+[0m21:52:38.606876 [info ] [MainThread]: python version: 3.12.6
+[0m21:52:38.606876 [info ] [MainThread]: python path: D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Scripts\python.exe
+[0m21:52:38.606876 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m21:52:38.640875 [debug] [MainThread]: Traceback (most recent call last):
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\__init__.py", line 2, in <module>
+    from dbt.adapters.snowflake.connections import SnowflakeConnectionManager
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 25, in <module>
+    import snowflake.connector
+ModuleNotFoundError: No module named 'snowflake.connector'; 'snowflake' is not a package
+
+[0m21:52:38.640875 [error] [MainThread]: Encountered an error:
+No module named 'snowflake.connector'; 'snowflake' is not a package
+[0m21:52:38.656876 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\cli\main.py", line 414, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\__init__.py", line 2, in <module>
+    from dbt.adapters.snowflake.connections import SnowflakeConnectionManager
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 25, in <module>
+    import snowflake.connector
+ModuleNotFoundError: No module named 'snowflake.connector'; 'snowflake' is not a package
+
+[0m21:52:38.657876 [debug] [MainThread]: Command `dbt debug` failed at 21:52:38.657876 after 0.24 seconds
+[0m21:52:38.657876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09319A3C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E093B91B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E09395DA60>]}
+[0m21:52:38.657876 [debug] [MainThread]: Flushing usage events
+[0m21:52:39.132591 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:54:10.149923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F37B413F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F37B413410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F37B412090>]}
+
+
+============================== 21:54:10.154917 | e49a7494-1bf6-42ec-94f8-cc542125a6b6 ==============================
+[0m21:54:10.154917 [info ] [MainThread]: Running with dbt=1.9.2
+[0m21:54:10.155917 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\konst\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug --target snowflake', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:54:10.189132 [info ] [MainThread]: dbt version: 1.9.2
+[0m21:54:10.190127 [info ] [MainThread]: python version: 3.12.6
+[0m21:54:10.190127 [info ] [MainThread]: python path: D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Scripts\python.exe
+[0m21:54:10.190127 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m21:54:10.212184 [debug] [MainThread]: Traceback (most recent call last):
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\__init__.py", line 2, in <module>
+    from dbt.adapters.snowflake.connections import SnowflakeConnectionManager
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 25, in <module>
+    import snowflake.connector
+ModuleNotFoundError: No module named 'snowflake.connector'; 'snowflake' is not a package
+
+[0m21:54:10.212184 [error] [MainThread]: Encountered an error:
+No module named 'snowflake.connector'; 'snowflake' is not a package
+[0m21:54:10.214085 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\cli\main.py", line 414, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\__init__.py", line 2, in <module>
+    from dbt.adapters.snowflake.connections import SnowflakeConnectionManager
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 25, in <module>
+    import snowflake.connector
+ModuleNotFoundError: No module named 'snowflake.connector'; 'snowflake' is not a package
+
+[0m21:54:10.215145 [debug] [MainThread]: Command `dbt debug` failed at 21:54:10.215145 after 0.21 seconds
+[0m21:54:10.215145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F37B5D9EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F37BDE5130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F37C1A0260>]}
+[0m21:54:10.215145 [debug] [MainThread]: Flushing usage events
+[0m21:54:10.685176 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:55:50.614862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FF9511E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FF9A7C200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FF9EA3FB0>]}
+
+
+============================== 21:55:50.620858 | e3619c26-45f0-4d8d-8ebc-94ca56a8cbca ==============================
+[0m21:55:50.620858 [info ] [MainThread]: Running with dbt=1.9.2
+[0m21:55:50.620858 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\konst\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug --target snowflake', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:55:50.654231 [info ] [MainThread]: dbt version: 1.9.2
+[0m21:55:50.654231 [info ] [MainThread]: python version: 3.12.6
+[0m21:55:50.654231 [info ] [MainThread]: python path: D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Scripts\python.exe
+[0m21:55:50.655230 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m21:55:50.675893 [debug] [MainThread]: Traceback (most recent call last):
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\__init__.py", line 2, in <module>
+    from dbt.adapters.snowflake.connections import SnowflakeConnectionManager
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 25, in <module>
+    import snowflake.connector
+ModuleNotFoundError: No module named 'snowflake.connector'; 'snowflake' is not a package
+
+[0m21:55:50.676854 [error] [MainThread]: Encountered an error:
+No module named 'snowflake.connector'; 'snowflake' is not a package
+[0m21:55:50.677884 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\cli\main.py", line 414, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\task\debug.py", line 114, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\task\debug.py", line 205, in _load_profile
+    profile: Profile = Profile.render(
+                       ^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 402, in render
+    return cls.from_raw_profiles(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 368, in from_raw_profiles
+    return cls.from_raw_profile_info(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 324, in from_raw_profile_info
+    credentials: Credentials = cls._credentials_from_profile(
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\config\profile.py", line 148, in _credentials_from_profile
+    cls = load_plugin(typename)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\factory.py", line 239, in load_plugin
+    return FACTORY.load_plugin(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\factory.py", line 68, in load_plugin
+    mod: Any = import_module("." + name, "dbt.adapters")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python312\Lib\importlib\__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\__init__.py", line 2, in <module>
+    from dbt.adapters.snowflake.connections import SnowflakeConnectionManager
+  File "D:\Repositories\Git_GitHub\courses_certificates_journals\Analytics Engineering\venv\Lib\site-packages\dbt\adapters\snowflake\connections.py", line 25, in <module>
+    import snowflake.connector
+ModuleNotFoundError: No module named 'snowflake.connector'; 'snowflake' is not a package
+
+[0m21:55:50.678853 [debug] [MainThread]: Command `dbt debug` failed at 21:55:50.678853 after 0.21 seconds
+[0m21:55:50.679896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FF942B3E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FFA0C2BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028FF99100B0>]}
+[0m21:55:50.679896 [debug] [MainThread]: Flushing usage events
+[0m21:55:51.151017 [debug] [MainThread]: An error was encountered while trying to flush usage events

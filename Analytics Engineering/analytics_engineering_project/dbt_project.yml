@@ -31,6 +31,18 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   analytics_engineering_project:
-    # Config indicated by + and applies to all files under models/example/
-    example:
+    raw:
+      +schema: analytics_raw
+      +materialized: view  # Falls du Rohdaten als View speichern willst
+    staging:
+      +schema: analytics_staging
+      +materialized: table  # Staging-Modelle oft als Tabellen
+    core:
+      +schema: analytics_core
+      +materialized: table
+    marts:
+      +schema: analytics_mart
+      +materialized: table
+    dev:
+      +schema: analytics_dev
       +materialized: view
