@@ -6,6 +6,12 @@ __pycache__/
 # Virtual environment
 venv/
 .env/
+.env
+.env.*
+!.env.example
+
+# Local credentials
+postgresql_login.txt
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
